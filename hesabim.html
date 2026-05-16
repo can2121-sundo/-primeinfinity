@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrimeInfinity — Mon Compte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="PrimeInfinity" class="logo-img"></a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+        <li><a href="a-propos.html" data-i18n="nav_about">À Propos</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+        <li><a href="inscription.html" data-i18n="nav_register">Inscription</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-dropdown">
+          <button class="lang-toggle" aria-label="Choisir la langue">
+            <svg class="lang-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          </button>
+          <div class="lang-flags">
+            <button class="lang-flag" data-lang="fr" aria-label="Français"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#002395"/><path d="M8 0h8v24H8z" fill="#FFF"/><path d="M16 0h8v24H16z" fill="#ED2939"/></svg></button>
+            <button class="lang-flag" data-lang="de" aria-label="Deutsch"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#000"/><path d="M0 8h24v8H0z" fill="#DD0000"/><path d="M0 16h24v8H0z" fill="#FFCE00"/></svg></button>
+            <button class="lang-flag" data-lang="en" aria-label="English"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#012169"/><path d="M0 0l24 24M24 0L0 24" stroke="#FFF" stroke-width="4"/><path d="M0 0l24 24M24 0L0 24" stroke="#C8102E" stroke-width="2"/><path d="M12 0v24M0 12h24" stroke="#FFF" stroke-width="4"/><path d="M12 0v24M0 12h24" stroke="#C8102E" stroke-width="2"/></svg></button>
+          </div>
+        </div>
+        <div class="nav-icons">
+          <a href="#" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg></a>
+          <a href="#" aria-label="Account"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg></a>
+          <a href="sepet.html" aria-label="Cart" class="nav-cart"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" /></svg><span class="cart-badge">0</span></a>
+        </div>
+        <div class="hamburger" aria-label="Menu"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="account-section">
+    <div class="container">
+      <div class="account-grid" id="account-content">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/account.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function() {
+      if (!Auth.isLoggedIn()) {
+        window.location.href = 'inscription.html';
+        return;
+      }
+      const user = Auth.getCurrentUser();
+      const orders = Auth.getOrders();
+      document.getElementById('account-content').innerHTML = `
+        <div class="account-sidebar">
+          <h3>Menu</h3>
+          <nav class="account-nav">
+            <a href="#" class="active">Informations</a>
+            <a href="#orders">Mes Commandes (${orders.length})</a>
+            <a href="#" onclick="Auth.logout();return false;">Déconnexion</a>
+          </nav>
+        </div>
+        <div class="account-content">
+          <h2>Mon Compte</h2>
+          <div style="margin-bottom:32px;">
+            <h3 style="color:var(--gold);font-size:1rem;margin-bottom:16px;">Informations personnelles</h3>
+            <p style="color:var(--text-gray);margin-bottom:8px;"><strong style="color:#fff;">Email:</strong> ${user.email}</p>
+            <p style="color:var(--text-gray);margin-bottom:8px;"><strong style="color:#fff;">Prénom:</strong> ${user.firstName || '-'}</p>
+            <p style="color:var(--text-gray);margin-bottom:8px;"><strong style="color:#fff;">Nom:</strong> ${user.lastName || '-'}</p>
+            <p style="color:var(--text-gray);margin-bottom:8px;"><strong style="color:#fff;">Téléphone:</strong> ${user.phone || '-'}</p>
+          </div>
+          <div id="orders">
+            <h3 style="color:var(--gold);font-size:1rem;margin-bottom:16px;">Mes Commandes</h3>
+            ${orders.length === 0 ? '<p style="color:var(--text-gray);">Aucune commande pour le moment.</p>' : orders.map(o => `
+              <div style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:8px;padding:16px;margin-bottom:12px;">
+                <div style="display:flex;justify-content:space-between;margin-bottom:8px;">
+                  <strong style="color:#fff;">${o.id}</strong>
+                  <span style="color:var(--gold);">€${o.total.toFixed(2)}</span>
+                </div>
+                <p style="color:var(--text-gray);font-size:0.85rem;">${new Date(o.date).toLocaleDateString('fr-FR')} — ${o.items.length} article(s)</p>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    })();
+  </script>
+</body>
+</html>
+
