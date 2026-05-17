@@ -445,37 +445,7 @@ function initI18n() {
   document.querySelectorAll('.lang-flag').forEach(btn => {
     btn.addEventListener('click', () => {
       applyLanguage(btn.getAttribute('data-lang'));
-      // Close dropdown after selection
-      document.querySelectorAll('.lang-flags').forEach(flags => flags.classList.remove('open'));
-      document.querySelectorAll('.lang-arrow').forEach(arrow => arrow.classList.remove('down'));
     });
-  });
-
-  // Toggle dropdown
-  document.querySelectorAll('.lang-toggle').forEach(toggle => {
-    toggle.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const dropdown = toggle.closest('.lang-dropdown');
-      const flags = dropdown.querySelector('.lang-flags');
-      const arrow = toggle.querySelector('.lang-arrow');
-      const isOpen = flags.classList.contains('open');
-      
-      // Close all dropdowns first
-      document.querySelectorAll('.lang-flags').forEach(f => f.classList.remove('open'));
-      document.querySelectorAll('.lang-arrow').forEach(a => a.classList.remove('down'));
-      
-      // Toggle current
-      if (!isOpen) {
-        flags.classList.add('open');
-        arrow.classList.add('down');
-      }
-    });
-  });
-
-  // Close when clicking outside
-  document.addEventListener('click', () => {
-    document.querySelectorAll('.lang-flags').forEach(flags => flags.classList.remove('open'));
-    document.querySelectorAll('.lang-arrow').forEach(arrow => arrow.classList.remove('down'));
   });
 
   // Detect language: saved first, then browser, then default

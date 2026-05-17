@@ -181,59 +181,16 @@ input, textarea {
 }
 
 .lang-dropdown {
-  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   z-index: 1002;
-}
-
-.lang-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
-  color: var(--text-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: color 0.2s ease;
-}
-
-.lang-toggle:hover {
-  color: var(--gold);
-}
-
-.lang-arrow {
-  width: 18px;
-  height: 18px;
-  transition: transform 0.3s ease;
-  color: currentColor;
-}
-
-.lang-arrow.down {
-  transform: rotate(180deg);
 }
 
 .lang-flags {
-  display: none;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  position: absolute;
-  top: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--bg-primary);
-  padding: 12px 10px;
-  border-radius: 12px;
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  z-index: 1002;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-}
-
-.lang-flags.open {
   display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
 }
 
 .lang-flag {
@@ -1508,15 +1465,8 @@ input, textarea {
     gap: 12px;
   }
 
-  .lang-arrow {
-    width: 16px;
-    height: 16px;
-  }
-
   .lang-flags {
-    gap: 8px;
-    padding: 10px 8px;
-    top: calc(100% + 6px);
+    gap: 5px;
   }
 
   .lang-flag {
