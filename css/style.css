@@ -1293,6 +1293,21 @@ input, textarea {
   color: var(--gold);
 }
 
+.category-card .shop-now-link {
+  font-size: 0.8rem;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 8px;
+  transition: color var(--transition-fast);
+}
+
+a.category-card:hover .shop-now-link {
+  color: var(--gold);
+}
+
 /* ---------- Features Bar ---------- */
 .features-bar {
   background-color: var(--bg-primary);

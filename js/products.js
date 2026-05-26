@@ -79,7 +79,84 @@ const PRODUCTS = [
       en: "Fast 15W wireless charging station compatible with all Qi devices. Minimalist aluminum design with charging LED."
     },
     rating: 4.5,
-    reviews: 112
+    reviews: 112,
+    inStock: false
+  },
+
+  // --- MAISON & VIE ---
+  {
+    id: 5,
+    name: { fr: "Lampe LED Ambiance", de: "LED Stimmungslampe", en: "LED Ambient Lamp" },
+    price: 34.99,
+    category: "home",
+    images: [
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd5e?w=800&q=80"
+    ],
+    description: {
+      fr: "Lampe LED d'ambiance avec 16 millions de couleurs et contrôle tactile. Idéale pour créer une atmosphère chaleureuse dans votre intérieur.",
+      de: "LED-Stimmungslampe mit 16 Millionen Farben und Touch-Steuerung. Ideal für eine gemütliche Atmosphäre in Ihrem Zuhause.",
+      en: "LED ambient lamp with 16 million colors and touch control. Perfect for creating a warm atmosphere in your home."
+    },
+    rating: 4,
+    reviews: 54,
+    inStock: false
+  },
+  {
+    id: 6,
+    name: { fr: "Coussin Décoratif Velours", de: "Samt Dekokissen", en: "Velvet Decorative Cushion" },
+    price: 19.99,
+    category: "home",
+    images: [
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+      "https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800&q=80"
+    ],
+    description: {
+      fr: "Coussin décoratif en velours doux, housse amovible et lavable. Apporte une touche d'élégance à votre canapé ou votre lit.",
+      de: "Dekoratives Samtkissen mit abnehmbarem und waschbarem Bezug. Verleiht Ihrem Sofa oder Bett einen eleganten Touch.",
+      en: "Soft velvet decorative cushion with removable washable cover. Adds an elegant touch to your sofa or bed."
+    },
+    rating: 4,
+    reviews: 38,
+    inStock: false
+  },
+
+  // --- BEAUTÉ ---
+  {
+    id: 7,
+    name: { fr: "Sérum Visage Hydratant", de: "Gesichts-Feuchtigkeitsserum", en: "Hydrating Face Serum" },
+    price: 27.99,
+    category: "beauty",
+    images: [
+      "https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?w=800&q=80",
+      "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800&q=80"
+    ],
+    description: {
+      fr: "Sérum visage à l'acide hyaluronique pour une hydratation intense. Formule légère, non grasse, convient à tous types de peau.",
+      de: "Gesichtsserum mit Hyaluronsäure für intensive Feuchtigkeit. Leichte, nicht fettige Formel, geeignet für alle Hauttypen.",
+      en: "Hyaluronic acid face serum for intense hydration. Lightweight non-greasy formula suitable for all skin types."
+    },
+    rating: 4,
+    reviews: 67,
+    inStock: false
+  },
+  {
+    id: 8,
+    name: { fr: "Brosse à Maquillage Pro", de: "Professioneller Make-up-Pinsel", en: "Pro Makeup Brush" },
+    price: 22.99,
+    category: "beauty",
+    images: [
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
+      "https://images.unsplash.com/photo-1512207736890-6ffed8a84e8d?w=800&q=80"
+    ],
+    description: {
+      fr: "Brosse à maquillage professionnelle avec poils synthétiques ultra-doux. Parfaite pour un teint uniforme et une application précise.",
+      de: "Professioneller Make-up-Pinsel mit ultraweichen Kunsthaaren. Perfekt für einen gleichmäßigen Teint und präzise Anwendung.",
+      en: "Professional makeup brush with ultra-soft synthetic bristles. Perfect for an even complexion and precise application."
+    },
+    rating: 4,
+    reviews: 45,
+    inStock: false
   }
 ];
 
