@@ -79,27 +79,26 @@ const PRODUCTS = [
       en: "Fast 15W wireless charging station compatible with all Qi devices. Minimalist aluminum design with charging LED."
     },
     rating: 4.5,
-    reviews: 112,
-    inStock: false
+    reviews: 112
   },
-
-  // --- MAISON & VIE ---
   {
     id: 5,
-    name: { fr: "Lampe LED Ambiance", de: "LED Stimmungslampe", en: "LED Ambient Lamp" },
-    price: 34.99,
+    name: { fr: "Lampe LED Ambiance", de: "LED Stimmungslampe", en: "LED Mood Lamp" },
+    price: 24.99,
     category: "home",
     images: [
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd5e?w=800&q=80"
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+      "https://images.unsplash.com/photo-1513506003901-1e6a35f2ee38?w=800&q=80",
+      "https://images.unsplash.com/photo-1526057565006-20beab8dd2ed?w=800&q=80"
     ],
     description: {
-      fr: "Lampe LED d'ambiance avec 16 millions de couleurs et contrôle tactile. Idéale pour créer une atmosphère chaleureuse dans votre intérieur.",
-      de: "LED-Stimmungslampe mit 16 Millionen Farben und Touch-Steuerung. Ideal für eine gemütliche Atmosphäre in Ihrem Zuhause.",
-      en: "LED ambient lamp with 16 million colors and touch control. Perfect for creating a warm atmosphere in your home."
+      fr: "Lampe LED à ambiance chaleureuse avec 16 couleurs réglables et télécommande. Idéale pour créer une atmosphère cosy dans votre intérieur.",
+      de: "Stimmungslampe mit 16 einstellbaren Farben und Fernbedienung. Ideal für eine gemütliche Atmosphäre in Ihrem Zuhause.",
+      en: "Mood LED lamp with 16 adjustable colors and remote control. Perfect for creating a cozy atmosphere in your home."
     },
-    rating: 4,
-    reviews: 54,
+    rating: 4.0,
+    reviews: 43,
     inStock: false
   },
   {
@@ -109,53 +108,57 @@ const PRODUCTS = [
     category: "home",
     images: [
       "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
-      "https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800&q=80"
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
+      "https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800&q=80",
+      "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=800&q=80"
     ],
     description: {
-      fr: "Coussin décoratif en velours doux, housse amovible et lavable. Apporte une touche d'élégance à votre canapé ou votre lit.",
-      de: "Dekoratives Samtkissen mit abnehmbarem und waschbarem Bezug. Verleiht Ihrem Sofa oder Bett einen eleganten Touch.",
-      en: "Soft velvet decorative cushion with removable washable cover. Adds an elegant touch to your sofa or bed."
+      fr: "Coussin décoratif en velours doux au toucher, disponible en plusieurs coloris tendance. Apportez une touche d'élégance à votre canapé ou lit.",
+      de: "Dekoratives Samtkissen in mehreren trendigen Farben. Verleihen Sie Ihrem Sofa oder Bett einen Hauch von Eleganz.",
+      en: "Soft velvet decorative cushion available in several trendy colors. Add a touch of elegance to your sofa or bed."
     },
-    rating: 4,
-    reviews: 38,
+    rating: 4.0,
+    reviews: 31,
     inStock: false
   },
-
-  // --- BEAUTÉ ---
   {
     id: 7,
-    name: { fr: "Sérum Visage Hydratant", de: "Gesichts-Feuchtigkeitsserum", en: "Hydrating Face Serum" },
-    price: 27.99,
+    name: { fr: "Sérum Visage Hydratant", de: "Feuchtigkeitsserum", en: "Hydrating Face Serum" },
+    price: 34.99,
     category: "beauty",
     images: [
-      "https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?w=800&q=80",
-      "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800&q=80"
+      "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=80",
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80",
+      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=800&q=80",
+      "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=800&q=80"
     ],
     description: {
-      fr: "Sérum visage à l'acide hyaluronique pour une hydratation intense. Formule légère, non grasse, convient à tous types de peau.",
-      de: "Gesichtsserum mit Hyaluronsäure für intensive Feuchtigkeit. Leichte, nicht fettige Formel, geeignet für alle Hauttypen.",
-      en: "Hyaluronic acid face serum for intense hydration. Lightweight non-greasy formula suitable for all skin types."
+      fr: "Sérum hydratant concentré à l'acide hyaluronique et vitamines C & E. Hydrate en profondeur, lisse et illumine le teint dès les premières applications.",
+      de: "Konzentriertes Feuchtigkeitsserum mit Hyaluronsäure und Vitaminen C & E. Feuchtigkeitsspendend, glättend und aufhellend ab der ersten Anwendung.",
+      en: "Concentrated hydrating serum with hyaluronic acid and vitamins C & E. Deeply moisturizes, smooths and brightens skin from the first applications."
     },
-    rating: 4,
-    reviews: 67,
+    rating: 4.0,
+    reviews: 57,
     inStock: false
   },
   {
     id: 8,
-    name: { fr: "Brosse à Maquillage Pro", de: "Professioneller Make-up-Pinsel", en: "Pro Makeup Brush" },
-    price: 22.99,
+    name: { fr: "Brosse à Maquillage Pro", de: "Professioneller Make-up Pinsel", en: "Pro Makeup Brush" },
+    price: 14.99,
     category: "beauty",
     images: [
       "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
-      "https://images.unsplash.com/photo-1512207736890-6ffed8a84e8d?w=800&q=80"
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80",
+      "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80",
+      "https://images.unsplash.com/photo-1631214524020-3c69b8e0d8b7?w=800&q=80"
     ],
     description: {
-      fr: "Brosse à maquillage professionnelle avec poils synthétiques ultra-doux. Parfaite pour un teint uniforme et une application précise.",
-      de: "Professioneller Make-up-Pinsel mit ultraweichen Kunsthaaren. Perfekt für einen gleichmäßigen Teint und präzise Anwendung.",
-      en: "Professional makeup brush with ultra-soft synthetic bristles. Perfect for an even complexion and precise application."
+      fr: "Brosse à maquillage professionnelle aux poils ultra-doux et synthétiques. Application parfaite du fond de teint, blush et fards à paupières.",
+      de: "Professioneller Make-up Pinsel mit ultraweichen, synthetischen Borsten. Perfekte Applikation von Foundation, Rouge und Lidschatten.",
+      en: "Professional makeup brush with ultra-soft synthetic bristles. Perfect application of foundation, blush and eyeshadow."
     },
-    rating: 4,
-    reviews: 45,
+    rating: 4.0,
+    reviews: 28,
     inStock: false
   }
 ];
