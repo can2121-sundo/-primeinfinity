@@ -1052,11 +1052,15 @@ input, textarea {
   align-items: center;
   justify-content: center;
   max-width: 520px;
-  max-height: 380px;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .slide-visual img {
-  max-height: 380px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .slide-img-placeholder {
@@ -1873,6 +1877,15 @@ a.category-card:hover .shop-now-link {
   align-items: center;
   justify-content: center;
   max-width: 520px;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.showcase-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .showcase-img-placeholder {
