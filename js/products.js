@@ -50,7 +50,7 @@ const PRODUCTS = [
     category: "beauty",
     images: [
       "images/prod_3.jpg",
-      "images/prod_4.jpg",
+      "images/prod_2.jpg",
       "images/new_parfum.jpg",
       "images/prod_1.jpg"
     ],
@@ -69,9 +69,9 @@ const PRODUCTS = [
     price: 34.99,
     category: "beauty",
     images: [
-      "images/prod_4.jpg",
       "images/prod_3.jpg",
       "images/new_creme.jpg",
+      "images/prod_2.jpg",
       "images/new_parfum.jpg"
     ],
     description: {
