@@ -166,9 +166,9 @@ src="https://www.facebook.com/tr?id=969904029147074&ev=PageView&noscript=1"
             <span class="product-reviews">(${product.reviews})</span>
           </div>
           <p class="product-detail-desc">${desc}</p>
-          <div style="background:rgba(255,0,0,0.15);border:1px solid rgba(255,0,0,0.3);color:#ff4444;padding:10px 14px;border-radius:6px;font-size:0.85rem;font-weight:600;margin-bottom:16px;text-align:center;" data-i18n="out_of_stock_detail">
-            ${t.out_of_stock_detail || '⚠️ Rupture de stock — Ce produit est temporairement indisponible'}
-          </div>
+          ${product.inStock === false
+            ? `<div style="background:rgba(255,0,0,0.15);border:1px solid rgba(255,0,0,0.3);color:#ff4444;padding:10px 14px;border-radius:6px;font-size:0.85rem;font-weight:600;margin-bottom:16px;text-align:center;">${t.out_of_stock_detail || '⚠️ Rupture de stock — Ce produit est temporairement indisponible'}</div>`
+            : `<div style="display:flex;align-items:center;gap:8px;color:#1a8f3c;font-size:0.9rem;font-weight:600;margin-bottom:16px;"><span style="width:9px;height:9px;border-radius:50%;background:#1fbe4f;box-shadow:0 0 0 3px rgba(31,190,79,0.18);display:inline-block;"></span>${t.in_stock || 'En stock'}</div>`}
           <div class="product-detail-actions">
             <div class="qty-selector">
               <button onclick="updateQty(-1)">−</button>

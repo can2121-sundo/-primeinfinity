@@ -1453,6 +1453,27 @@ a.category-card:hover .shop-now-link {
   font-family: var(--font-body);
 }
 
+.product-stock {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #1a8f3c;
+  margin-bottom: 8px;
+  font-family: var(--font-body);
+}
+
+.product-stock .stock-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1fbe4f;
+  box-shadow: 0 0 0 3px rgba(31, 190, 79, 0.18);
+  display: inline-block;
+  flex-shrink: 0;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .cards-grid {

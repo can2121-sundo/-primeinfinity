@@ -10,10 +10,11 @@ const PRODUCTS = [
     category: "beauty",
     images: [
       "images/prod_1.jpg",
-      "images/new_creme.jpg",
-      "images/new_parfum.jpg",
-      "images/prod_2.jpg"
+      "images/oil_wood1.jpg",
+      "images/oil_wood2.jpg",
+      "images/oil_flower.jpg"
     ],
+    inStock: true,
     description: {
       fr: "Huile de soin visage enrichie en actifs naturels précieux. Nourrit, répare et illumine le teint en profondeur. Texture légère non grasse, absorbe rapidement pour une peau douce et radieuse.",
       de: "Gesichtspflegeöl angereichert mit wertvollen natürlichen Wirkstoffen. Nährt, repariert und strahlt den Teint tief auf. Leichte, nicht fettige Textur.",
@@ -30,10 +31,11 @@ const PRODUCTS = [
     category: "beauty",
     images: [
       "images/prod_2.jpg",
-      "images/prod_1.jpg",
-      "images/new_parfum.jpg",
-      "images/new_creme.jpg"
+      "images/serum_tray.jpg",
+      "images/serum_blue.jpg",
+      "images/serum_drop.jpg"
     ],
+    inStock: true,
     description: {
       fr: "Sérum concentré à action éclat pour unifier le teint et atténuer les taches. Formule légère à base d'actifs lumineux qui lissent et perfectionnent la peau dès les premières semaines.",
       de: "Konzentriertes Aufhellungsserum zum Vereinheitlichen des Hauttons. Leichte Formel mit leuchtenden Wirkstoffen.",
@@ -50,10 +52,11 @@ const PRODUCTS = [
     category: "beauty",
     images: [
       "images/prod_3.jpg",
-      "images/prod_2.jpg",
-      "images/new_parfum.jpg",
-      "images/prod_1.jpg"
+      "images/tonic_crystal.jpg",
+      "images/tonic_pampas.jpg",
+      "images/tonic_hand.jpg"
     ],
+    inStock: true,
     description: {
       fr: "Lotion tonifiante purifiante qui resserre les pores et équilibre le film hydrolipidique. Formule douce sans alcool, convient à tous types de peaux.",
       de: "Reinigende Toniklotion, die die Poren verfeinert. Sanfte alkoholfreie Formel für alle Hauttypen.",
@@ -69,11 +72,12 @@ const PRODUCTS = [
     price: 34.99,
     category: "beauty",
     images: [
-      "images/prod_3.jpg",
-      "images/new_creme.jpg",
-      "images/prod_2.jpg",
-      "images/new_parfum.jpg"
+      "images/prod_4.jpg",
+      "images/oil_drop.jpg",
+      "images/oil_app.jpg",
+      "images/sec_skin4.jpg"
     ],
+    inStock: true,
     description: {
       fr: "Coffret soin complet comprenant sérum, huile, lotion et crème pour une routine beauté totale. Formules douces adaptées à tous types de peaux.",
       de: "Komplettes Pflegeset mit Serum, Öl, Lotion und Creme. Sanfte Formeln für alle Hauttypen.",
@@ -90,10 +94,11 @@ const PRODUCTS = [
     category: "beauty",
     images: [
       "images/new_creme.jpg",
-      "images/prod_1.jpg",
       "images/prod_2.jpg",
-      "images/new_parfum.jpg"
+      "images/serum_tray.jpg",
+      "images/serum_drop.jpg"
     ],
+    inStock: true,
     description: {
       fr: "Crème hydratante visage à texture veloutée qui nourrit et protège la peau toute la journée. Enrichie en beurre de karité et actifs botaniques pour une hydratation longue durée.",
       de: "Feuchtigkeitscreme mit samtig-weicher Textur, die die Haut den ganzen Tag pflegt. Angereichert mit Sheabutter und pflanzlichen Wirkstoffen.",
@@ -110,10 +115,11 @@ const PRODUCTS = [
     category: "beauty",
     images: [
       "images/new_parfum.jpg",
-      "images/new_creme.jpg",
-      "images/prod_1.jpg",
-      "images/sec_skin4.jpg"
+      "images/sec_skin4.jpg",
+      "images/oil_flower.jpg",
+      "images/new_creme.jpg"
     ],
+    inStock: true,
     description: {
       fr: "Eau de parfum à la composition florale et boisée, délicatement équilibrée. Notes de tête fraîches, cœur floral et fond musqué chaleureux. Longue tenue pour une présence subtile toute la journée.",
       de: "Eau de Parfum mit blumig-holziger Komposition. Frische Kopfnoten, florales Herz und warmer Moschus-Fond. Lange Haltbarkeit.",
@@ -160,6 +166,7 @@ function renderProductCards(lang) {
       <div class="product-info">
         <h3>${getProductName(product, lang)}</h3>
         <div class="product-price">${formatPrice(product.price)}</div>
+        ${product.inStock !== false ? `<div class="product-stock"><span class="stock-dot"></span>${translations[lang]?.in_stock || 'En stock'}</div>` : ''}
         <div class="product-stars">
           ${renderStars(product.rating)}
           <span class="product-reviews">(${product.reviews})</span>
