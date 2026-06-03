@@ -310,8 +310,8 @@ input, textarea {
   justify-content: center;
   background-color: var(--bg-primary);
   overflow: hidden;
-  padding-top: 80px;
-  padding-bottom: 20px;
+  padding-top: 56px;
+  padding-bottom: 12px;
 }
 
 .hero-content {
@@ -1052,6 +1052,11 @@ input, textarea {
   align-items: center;
   justify-content: center;
   max-width: 520px;
+  max-height: 380px;
+}
+
+.slide-visual img {
+  max-height: 380px;
 }
 
 .slide-img-placeholder {
