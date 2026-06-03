@@ -95,7 +95,7 @@ const PRODUCTS = [
     images: [
       "images/new_creme.jpg",
       "images/creme_open.jpg",
-      "images/creme_podium.jpg",
+      "images/creme_clean.jpg",
       "images/creme_blue.jpg"
     ],
     inStock: true,
