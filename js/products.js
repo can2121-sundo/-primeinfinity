@@ -94,9 +94,9 @@ const PRODUCTS = [
     category: "beauty",
     images: [
       "images/new_creme.jpg",
-      "images/prod_2.jpg",
-      "images/serum_tray.jpg",
-      "images/serum_drop.jpg"
+      "images/creme_open.jpg",
+      "images/creme_podium.jpg",
+      "images/creme_blue.jpg"
     ],
     inStock: true,
     description: {
@@ -115,9 +115,9 @@ const PRODUCTS = [
     category: "beauty",
     images: [
       "images/new_parfum.jpg",
-      "images/sec_skin4.jpg",
-      "images/oil_flower.jpg",
-      "images/new_creme.jpg"
+      "images/parfum_flower.jpg",
+      "images/parfum_mini.jpg",
+      "images/parfum_black.jpg"
     ],
     inStock: true,
     description: {
