@@ -1061,6 +1061,12 @@ input, textarea {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.slide-visual a:hover img,
+.showcase-visual a:hover img {
+  transform: scale(1.05);
 }
 
 .slide-img-placeholder {
