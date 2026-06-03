@@ -5,161 +5,123 @@
 const PRODUCTS = [
   {
     id: 1,
-    name: { fr: "Casque Sans Fil", de: "Kabellose Kopfhörer", en: "Wireless Headphones", tr: "Kablosuz Kulaklık" },
-    price: 49.99,
-    category: "electronics",
+    name: { fr: "Huile Précieuse Visage", de: "Kostbares Gesichtsöl", en: "Precious Face Oil", tr: "Değerli Yüz Yağı" },
+    price: 22.99,
+    category: "beauty",
     images: [
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80",
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&q=80",
-      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80",
-      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&q=80"
+      "images/prod_1.jpg",
+      "images/new_creme.jpg",
+      "images/new_parfum.jpg",
+      "images/prod_2.jpg"
     ],
     description: {
-      fr: "Casque sans fil avec réduction de bruit active, autonomie de 30 heures et son haute fidélité. Confortable pour une utilisation prolongée.",
-      de: "Kabellose Kopfhörer mit aktiver Geräuschunterdrückung, 30 Stunden Akkulaufzeit und Hi-Fi-Sound. Bequem für den Langzeitgebrauch.",
-      en: "Wireless headphones with active noise cancellation, 30-hour battery life, and hi-fi sound. Comfortable for extended use.",
-      tr: "Aktif gürültü engelleme teknolojisi, 30 saat pil ömrü ve yüksek kaliteli ses deneyimiyle öne çıkan kablosuz kulaklık. Uzun süreli kullanım için ergonomik tasarım."
+      fr: "Huile de soin visage enrichie en actifs naturels précieux. Nourrit, répare et illumine le teint en profondeur. Texture légère non grasse, absorbe rapidement pour une peau douce et radieuse.",
+      de: "Gesichtspflegeöl angereichert mit wertvollen natürlichen Wirkstoffen. Nährt, repariert und strahlt den Teint tief auf. Leichte, nicht fettige Textur.",
+      en: "Face care oil enriched with precious natural actives. Nourishes, repairs and deeply illuminates the complexion. Lightweight non-greasy texture.",
+      tr: "Değerli doğal aktiflerle zenginleştirilmiş yüz bakım yağı. Cildi besler, onarır ve derinlemesine parlaklık kazandırır."
     },
-    rating: 4.8,
-    reviews: 128
+    rating: 4.6,
+    reviews: 89
   },
   {
     id: 2,
-    name: { fr: "Bracelet Connecté", de: "Smart Fitness Armband", en: "Smart Fitness Band", tr: "Akıllı Fitness Bandı" },
-    price: 89.99,
-    category: "electronics",
+    name: { fr: "Sérum Éclat Intense", de: "Intensives Aufhellungsserum", en: "Intense Radiance Serum", tr: "Yoğun Parlaklık Serumu" },
+    price: 24.99,
+    category: "beauty",
     images: [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&q=80"
+      "images/prod_2.jpg",
+      "images/prod_1.jpg",
+      "images/new_parfum.jpg",
+      "images/new_creme.jpg"
     ],
     description: {
-      fr: "Bracelet connecté avec suivi de la fréquence cardiaque, du sommeil et de l'activité physique. Écran couleur tactile et autonomie de 14 jours.",
-      de: "Smartes Fitness-Armband mit Herzfrequenz-, Schlaf- und Aktivitätstracking. Farb-Touchscreen und 14 Tage Akkulaufzeit.",
-      en: "Smart fitness band with heart rate, sleep, and activity tracking. Color touchscreen and 14-day battery life.",
-      tr: "Kalp atış hızı, uyku ve aktivite takibi yapan akıllı fitness bandı. Renkli dokunmatik ekran ve 14 günlük pil ömrü."
+      fr: "Sérum concentré à action éclat pour unifier le teint et atténuer les taches. Formule légère à base d'actifs lumineux qui lissent et perfectionnent la peau dès les premières semaines.",
+      de: "Konzentriertes Aufhellungsserum zum Vereinheitlichen des Hauttons. Leichte Formel mit leuchtenden Wirkstoffen.",
+      en: "Concentrated radiance serum to unify skin tone and reduce dark spots. Lightweight formula with brightening actives.",
+      tr: "Cilt tonunu eşitleyen ve leke görünümünü azaltan yoğun parlaklık serumu."
     },
-    rating: 4.6,
-    reviews: 96
+    rating: 4.8,
+    reviews: 163
   },
   {
     id: 3,
-    name: { fr: "Enceinte Portable", de: "Tragbarer Lautsprecher", en: "Portable Speaker" },
-    price: 39.99,
-    category: "electronics",
+    name: { fr: "Lotion Tonifiante Purifiante", de: "Reinigende Toniklotion", en: "Purifying Toning Lotion", tr: "Arındırıcı Tonik Losyon" },
+    price: 18.99,
+    category: "beauty",
     images: [
-      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
-      "https://images.unsplash.com/photo-1612444530582-fc66183b16f7?w=800&q=80",
-      "https://images.unsplash.com/photo-1507494924047-60b8ee826ca9?w=800&q=80"
+      "images/prod_3.jpg",
+      "images/prod_4.jpg",
+      "images/new_parfum.jpg",
+      "images/prod_1.jpg"
     ],
     description: {
-      fr: "Enceinte portable Bluetooth 5.0 avec son 360° immersif. Étanche IPX7, autonomie de 20 heures, parfaite pour l'extérieur.",
-      de: "Tragbarer Bluetooth 5.0 Lautsprecher mit immersivem 360°-Sound. IPX7 wasserdicht, 20 Stunden Akkulaufzeit, perfekt für draußen.",
-      en: "Portable Bluetooth 5.0 speaker with immersive 360° sound. IPX7 waterproof, 20-hour battery, perfect for outdoors."
+      fr: "Lotion tonifiante purifiante qui resserre les pores et équilibre le film hydrolipidique. Formule douce sans alcool, convient à tous types de peaux.",
+      de: "Reinigende Toniklotion, die die Poren verfeinert. Sanfte alkoholfreie Formel für alle Hauttypen.",
+      en: "Purifying toning lotion that tightens pores and balances the hydrolipidic film. Gentle alcohol-free formula for all skin types.",
+      tr: "Gözenekleri sıkılaştıran arındırıcı tonik losyon. Tüm cilt tiplerine uygun alkol içermeyen formül."
     },
-    rating: 4.7,
-    reviews: 75
+    rating: 4.4,
+    reviews: 97
   },
   {
     id: 4,
-    name: { fr: "Station de Charge Sans Fil", de: "Kabellose Ladestation", en: "Wireless Charging Station" },
-    price: 29.99,
-    category: "electronics",
-    images: [
-      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=800&q=80",
-      "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=800&q=80",
-      "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=800&q=80",
-      "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&q=80"
-    ],
-    description: {
-      fr: "Station de charge sans fil rapide 15W compatible avec tous les appareils Qi. Design minimaliste en aluminium avec LED de charge.",
-      de: "Schnelle 15W kabellose Ladestation, kompatibel mit allen Qi-Geräten. Minimalistisches Aluminiumdesign mit Lade-LED.",
-      en: "Fast 15W wireless charging station compatible with all Qi devices. Minimalist aluminum design with charging LED."
-    },
-    rating: 4.5,
-    reviews: 112
-  },
-  {
-    id: 5,
-    name: { fr: "Lampe LED Ambiance", de: "LED Stimmungslampe", en: "LED Mood Lamp" },
-    price: 24.99,
-    category: "home",
-    images: [
-      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
-      "https://images.unsplash.com/photo-1513506003901-1e6a35f2ee38?w=800&q=80",
-      "https://images.unsplash.com/photo-1526057565006-20beab8dd2ed?w=800&q=80"
-    ],
-    description: {
-      fr: "Lampe LED à ambiance chaleureuse avec 16 couleurs réglables et télécommande. Idéale pour créer une atmosphère cosy dans votre intérieur.",
-      de: "Stimmungslampe mit 16 einstellbaren Farben und Fernbedienung. Ideal für eine gemütliche Atmosphäre in Ihrem Zuhause.",
-      en: "Mood LED lamp with 16 adjustable colors and remote control. Perfect for creating a cozy atmosphere in your home."
-    },
-    rating: 4.0,
-    reviews: 43,
-    inStock: false
-  },
-  {
-    id: 6,
-    name: { fr: "Coussin Décoratif Velours", de: "Samt Dekokissen", en: "Velvet Decorative Cushion" },
-    price: 19.99,
-    category: "home",
-    images: [
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
-      "https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800&q=80",
-      "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=800&q=80"
-    ],
-    description: {
-      fr: "Coussin décoratif en velours doux au toucher, disponible en plusieurs coloris tendance. Apportez une touche d'élégance à votre canapé ou lit.",
-      de: "Dekoratives Samtkissen in mehreren trendigen Farben. Verleihen Sie Ihrem Sofa oder Bett einen Hauch von Eleganz.",
-      en: "Soft velvet decorative cushion available in several trendy colors. Add a touch of elegance to your sofa or bed."
-    },
-    rating: 4.0,
-    reviews: 31,
-    inStock: false
-  },
-  {
-    id: 7,
-    name: { fr: "Sérum Visage Hydratant", de: "Feuchtigkeitsserum", en: "Hydrating Face Serum" },
+    name: { fr: "Coffret Soin Complet", de: "Komplettes Pflegeset", en: "Complete Skincare Set", tr: "Tam Bakım Seti" },
     price: 34.99,
     category: "beauty",
     images: [
-      "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=80",
-      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80",
-      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=800&q=80",
-      "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=800&q=80"
+      "images/prod_4.jpg",
+      "images/prod_3.jpg",
+      "images/new_creme.jpg",
+      "images/new_parfum.jpg"
     ],
     description: {
-      fr: "Sérum hydratant concentré à l'acide hyaluronique et vitamines C & E. Hydrate en profondeur, lisse et illumine le teint dès les premières applications.",
-      de: "Konzentriertes Feuchtigkeitsserum mit Hyaluronsäure und Vitaminen C & E. Feuchtigkeitsspendend, glättend und aufhellend ab der ersten Anwendung.",
-      en: "Concentrated hydrating serum with hyaluronic acid and vitamins C & E. Deeply moisturizes, smooths and brightens skin from the first applications."
+      fr: "Coffret soin complet comprenant sérum, huile, lotion et crème pour une routine beauté totale. Formules douces adaptées à tous types de peaux.",
+      de: "Komplettes Pflegeset mit Serum, Öl, Lotion und Creme. Sanfte Formeln für alle Hauttypen.",
+      en: "Complete skincare set including serum, oil, lotion and cream for a full beauty routine. Gentle formulas for all skin types.",
+      tr: "Tam bir güzellik rutini için serum, yağ, losyon ve krem içeren eksiksiz bakım seti."
     },
-    rating: 4.0,
-    reviews: 57,
-    inStock: false
+    rating: 4.7,
+    reviews: 201
   },
   {
-    id: 8,
-    name: { fr: "Brosse à Maquillage Pro", de: "Professioneller Make-up Pinsel", en: "Pro Makeup Brush" },
-    price: 14.99,
+    id: 5,
+    name: { fr: "Crème Hydratante Visage", de: "Feuchtigkeitscreme Gesicht", en: "Moisturizing Face Cream", tr: "Nemlendirici Yüz Kremi" },
+    price: 21.99,
     category: "beauty",
     images: [
-      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80",
-      "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80",
-      "https://images.unsplash.com/photo-1631214524020-3c69b8e0d8b7?w=800&q=80"
+      "images/new_creme.jpg",
+      "images/prod_1.jpg",
+      "images/prod_2.jpg",
+      "images/new_parfum.jpg"
     ],
     description: {
-      fr: "Brosse à maquillage professionnelle aux poils ultra-doux et synthétiques. Application parfaite du fond de teint, blush et fards à paupières.",
-      de: "Professioneller Make-up Pinsel mit ultraweichen, synthetischen Borsten. Perfekte Applikation von Foundation, Rouge und Lidschatten.",
-      en: "Professional makeup brush with ultra-soft synthetic bristles. Perfect application of foundation, blush and eyeshadow."
+      fr: "Crème hydratante visage à texture veloutée qui nourrit et protège la peau toute la journée. Enrichie en beurre de karité et actifs botaniques pour une hydratation longue durée.",
+      de: "Feuchtigkeitscreme mit samtig-weicher Textur, die die Haut den ganzen Tag pflegt. Angereichert mit Sheabutter und pflanzlichen Wirkstoffen.",
+      en: "Velvety moisturizing face cream that nourishes and protects skin all day. Enriched with shea butter and botanical actives for long-lasting hydration.",
+      tr: "Cildi gün boyu besleyen ve koruyan kadifemsi dokulu nemlendirici yüz kremi. Shea yağı ve botanik aktiflerle zenginleştirilmiş."
     },
-    rating: 4.0,
-    reviews: 28,
-    inStock: false
+    rating: 4.5,
+    reviews: 142
+  },
+  {
+    id: 6,
+    name: { fr: "Eau de Parfum Précieuse", de: "Kostbares Eau de Parfum", en: "Precious Eau de Parfum", tr: "Değerli Eau de Parfum" },
+    price: 29.99,
+    category: "beauty",
+    images: [
+      "images/new_parfum.jpg",
+      "images/new_creme.jpg",
+      "images/prod_1.jpg",
+      "images/sec_skin4.jpg"
+    ],
+    description: {
+      fr: "Eau de parfum à la composition florale et boisée, délicatement équilibrée. Notes de tête fraîches, cœur floral et fond musqué chaleureux. Longue tenue pour une présence subtile toute la journée.",
+      de: "Eau de Parfum mit blumig-holziger Komposition. Frische Kopfnoten, florales Herz und warmer Moschus-Fond. Lange Haltbarkeit.",
+      en: "Floral and woody eau de parfum, delicately balanced. Fresh top notes, floral heart and warm musky base. Long-lasting for subtle all-day presence.",
+      tr: "Çiçeksi ve odunsu notaların zarif dengesiyle oluşturulmuş eau de parfum. Taze üst nota, çiçeksi kalp ve sıcak misk dibi. Gün boyu hafif ve uzun kalıcı."
+    },
+    rating: 4.9,
+    reviews: 178
   }
 ];
 
@@ -184,27 +146,27 @@ function getProductDesc(product, lang) {
   return product.description[lang] || product.description['en'];
 }
 
-// Render product cards on index.html
 function renderProductCards(lang) {
   const grid = document.querySelector('.products-grid');
   if (!grid) return;
-  
+
   grid.innerHTML = PRODUCTS.map((product, index) => `
     <div class="product-card animate-on-scroll" data-delay="${0.1 + index * 0.1}">
-      <div class="product-image">
-        <img src="${product.images[0]}" alt="${getProductName(product, lang)}" loading="lazy">
-      </div>
+      <a href="urun.html?id=${product.id}" style="text-decoration:none;display:block;">
+        <div class="product-image">
+          <img src="${product.images[0]}" alt="${getProductName(product, lang)}" loading="lazy">
+        </div>
+      </a>
       <div class="product-info">
         <h3>${getProductName(product, lang)}</h3>
         <div class="product-price">${formatPrice(product.price)}</div>
-        <div style="color:#ff4444;font-size:0.75rem;font-weight:600;margin-bottom:4px;">${translations[lang]?.out_of_stock || '⚠️ Out of Stock'}</div>
         <div class="product-stars">
           ${renderStars(product.rating)}
           <span class="product-reviews">(${product.reviews})</span>
         </div>
         <div class="product-actions">
-          <a href="urun.html?id=${product.id}" class="btn-primary btn-sm">${translations[lang]?.buy_now || 'Buy Now'}</a>
-          <button class="btn-outline btn-sm" onclick="Cart.addItem({id:${product.id},name:'${getProductName(product, lang).replace(/'/g, "\\'")}',price:${product.price},image:'${product.images[0]}'})">${translations[lang]?.add_to_cart || 'Add to Cart'}</button>
+          <a href="urun.html?id=${product.id}" class="btn-primary btn-sm">${translations[lang]?.buy_now || 'Acheter Maintenant'}</a>
+          <button class="btn-outline btn-sm" onclick="Cart.addItem({id:${product.id},name:'${getProductName(product, lang).replace(/'/g, "\\'")}',price:${product.price},image:'${product.images[0]}'})">${translations[lang]?.add_to_cart || 'Ajouter au Panier'}</button>
         </div>
       </div>
     </div>
