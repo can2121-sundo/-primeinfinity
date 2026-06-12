@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="facebook-domain-verification" content="w7g5utu0v2kih1u6bphewofvi5tgkc" />
   <meta name="google" content="notranslate"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inscription — PrimeInfinity</title>
-  <meta name="description" content="Rejoignez PrimeInfinity — Créez votre compte en quelques étapes simples.">
+  <title>Marques &amp; Partenaires — PrimeInfinity</title>
+  <meta name="description" content="Contactez PrimeInfinity. Nous sommes là pour répondre à vos questions concernant notre commerce international premium.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -80,113 +80,75 @@ src="https://www.facebook.com/tr?id=969904029147074&ev=PageView&noscript=1"
 
   <section class="page-hero vh-50">
     <div class="hero-content">
-      <h1 class="gold-gradient-text" data-i18n="reg_title">Rejoignez PrimeInfinity</h1>
-      <p class="breadcrumb"><a href="index.html" data-i18n="breadcrumb_home">Accueil</a> / <span data-i18n="nav_register">Inscription</span></p>
+      <h1 class="gold-gradient-text" data-i18n="mk_title">Marques &amp; Partenaires</h1>
+      <p class="subheadline" data-i18n="mk_desc">Prime Infinity collabore avec des marques reconnues dans les secteurs du bien-être, de la nutrition, de la beauté et des produits premium.</p>
     </div>
   </section>
 
-  <section class="registration-section section-padding">
+  <section class="contact-section">
     <div class="container">
-      <div class="registration-form-wrapper animate-on-scroll">
-        <div class="reg-progress">
-          <div class="reg-progress-track">
-            <div class="reg-progress-fill" id="reg-progress-fill" style="width: 25%"></div>
+
+      <div class="animate-on-scroll" style="margin-bottom:42px;">
+        <h2 class="gold-gradient-text" style="text-align:center;margin-bottom:26px;" data-i18n="mk_current">Partenaires Actuels</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;max-width:760px;margin:0 auto;">
+          <div class="glass-card" style="padding:30px;text-align:center;">
+            <div style="font-family:Georgia,serif;font-size:1.5rem;font-weight:700;color:#c8a96a;margin-bottom:10px;">Swedish Nutra</div>
+            <p style="font-size:.9rem;opacity:.85;margin:0;">Compléments alimentaires liquides premium — collagène, vitamines et multivitamines fabriqués en Suède.</p>
           </div>
-          <div class="reg-steps-indicator">
-            <span class="reg-step-dot active" data-step="1">1</span>
-            <span class="reg-step-dot" data-step="2">2</span>
-            <span class="reg-step-dot" data-step="3">3</span>
-            <span class="reg-step-dot" data-step="4">4</span>
+          <div class="glass-card" style="padding:30px;text-align:center;">
+            <div style="font-family:Georgia,serif;font-size:1.5rem;font-weight:700;color:#c8a96a;margin-bottom:10px;">Swedish Collagen</div>
+            <p style="font-size:.9rem;opacity:.85;margin:0;">Collagène marin de luxe pour la beauté féminine — shots et formules liquides haut de gamme.</p>
           </div>
         </div>
-        <form id="registration-form" onsubmit="return false;">
-          <div class="reg-step active" data-step="1">
-            <h3 data-i18n="reg_step1_title">Votre Email</h3>
-            <p data-i18n="reg_step1_desc">Entrez votre adresse email pour commencer</p>
-            <div class="form-group">
-              <label data-i18n="reg_email">Adresse Email</label>
-              <input type="email" id="reg-email" placeholder="votre@email.com" required>
-            </div>
-            <div class="reg-buttons">
-              <button type="button" class="btn-primary reg-next" data-i18n="reg_next">Suivant</button>
-            </div>
-          </div>
-          <div class="reg-step" data-step="2">
-            <h3 data-i18n="reg_step2_title">Adresse de Livraison</h3>
-            <p data-i18n="reg_step2_desc">Où souhaitez-vous recevoir vos commandes ?</p>
-            <div class="form-group">
-              <label data-i18n="reg_address1">Adresse ligne 1</label>
-              <input type="text" id="reg-address1" required>
-            </div>
-            <div class="form-group">
-              <label data-i18n="reg_address2">Adresse ligne 2 (optionnel)</label>
-              <input type="text" id="reg-address2">
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label data-i18n="reg_city">Ville</label>
-                <input type="text" id="reg-city" required>
-              </div>
-              <div class="form-group">
-                <label data-i18n="reg_zip">Code Postal</label>
-                <input type="text" id="reg-zip" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label data-i18n="reg_country">Pays</label>
-              <input type="text" id="reg-country" required>
-            </div>
-            <div class="reg-buttons">
-              <button type="button" class="btn-outline reg-back" data-i18n="reg_back">Retour</button>
-              <button type="button" class="btn-primary reg-next" data-i18n="reg_next">Suivant</button>
-            </div>
-          </div>
-          <div class="reg-step" data-step="3">
-            <h3 data-i18n="reg_step3_title">Informations de Paiement</h3>
-            <p data-i18n="reg_step3_desc">Vos données sont sécurisées et cryptées</p>
-            <div class="form-group">
-              <label data-i18n="reg_card_name">Nom sur la carte</label>
-              <input type="text" id="reg-card-name" required>
-            </div>
-            <div class="form-group">
-              <label data-i18n="reg_card_number">Numéro de carte</label>
-              <input type="text" id="reg-card-number" maxlength="19" placeholder="0000 0000 0000 0000" required>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label data-i18n="reg_card_expiry">Date d'expiration</label>
-                <input type="text" id="reg-card-expiry" maxlength="5" placeholder="MM/AA" required>
-              </div>
-              <div class="form-group">
-                <label data-i18n="reg_card_cvv">CVV</label>
-                <input type="text" id="reg-card-cvv" maxlength="4" placeholder="123" required>
-              </div>
-            </div>
-            <div class="reg-buttons">
-              <button type="button" class="btn-outline reg-back" data-i18n="reg_back">Retour</button>
-              <button type="button" class="btn-primary reg-next" data-i18n="reg_next">Suivant</button>
-            </div>
-          </div>
-          <div class="reg-step" data-step="4">
-            <h3 data-i18n="reg_step4_title">Numéro de Téléphone</h3>
-            <p data-i18n="reg_step4_desc">Pour vous contacter concernant vos commandes</p>
-            <div class="form-group">
-              <label data-i18n="reg_phone">Numéro de téléphone</label>
-              <input type="tel" id="reg-phone" placeholder="+33 6 12 34 56 78" required>
-            </div>
-            <div class="reg-buttons">
-              <button type="button" class="btn-outline reg-back" data-i18n="reg_back">Retour</button>
-              <button type="button" class="btn-primary reg-finish" data-i18n="reg_finish">Terminer</button>
-            </div>
-          </div>
-          <div class="reg-step reg-success" data-step="5">
-            <svg class="success-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <h3 data-i18n="reg_success">Inscription terminée ! Bienvenue chez PrimeInfinity.</h3>
-          </div>
-        </form>
+        <p class="animate-on-scroll" style="text-align:center;max-width:640px;margin:30px auto 0;opacity:.85;" data-i18n="mk_seek">Nous recherchons continuellement de nouvelles opportunités de partenariat avec des marques ambitieuses souhaitant se développer sur le marché européen.</p>
+        <div style="text-align:center;margin-top:24px;">
+          <a href="partenaires.html" class="btn-primary" data-i18n="b2b_cta">Devenir Partenaire →</a>
+        </div>
       </div>
+
+      <form class="contact-form animate-on-scroll" style="display:none;">
+        <div class="form-group">
+          <label for="nom" data-i18n="label_name">Nom *</label>
+          <input type="text" id="nom" name="nom" data-i18n="placeholder_name" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <label for="email" data-i18n="label_email">Email *</label>
+          <input type="email" id="email" name="email" data-i18n="placeholder_email" placeholder="votre@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="sujet" data-i18n="label_subject">Sujet</label>
+          <input type="text" id="sujet" name="sujet" data-i18n="placeholder_subject" placeholder="Sujet de votre message">
+        </div>
+        <div class="form-group">
+          <label for="message" data-i18n="label_message">Message *</label>
+          <textarea id="message" name="message" rows="5" data-i18n="placeholder_message" placeholder="Votre message..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%;" data-i18n="button_send">Envoyer</button>
+      </form>
+
+      <div class="contact-options animate-on-scroll" style="margin-top:30px;text-align:center;">
+        <div class="contact-option-buttons" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="mailto:contact@primeinfinity.fr" class="btn-outline contact-option-btn" data-i18n="email">Email</a>
+        </div>
+      </div>
+
+      <div class="glass-card contact-info-box animate-on-scroll">
+        <a href="mailto:contact@primeinfinity.fr" class="info-email">contact@primeinfinity.fr</a>
+        <p data-i18n="contact_phone">Téléphone : Bientôt disponible</p>
+        <p data-i18n="contact_address">Adresse : France</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=100089442633083" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/primeinfinity.57?igsh=ejQxbXVoZHlqZ3Z6&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@primeinfinity.fr?_r=1&_t=ZN-96M9Mzx8kxn" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
+          </a>
+        </div>
+      </div>
+
     </div>
   </section>
 
