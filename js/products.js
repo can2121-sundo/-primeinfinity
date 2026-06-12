@@ -8,7 +8,7 @@ const PRODUCTS = [
   {
     id: 1, sku: 1210,
     name: { fr: "Collagène Marin Liquide 10 000 mg", de: "Flüssiges Marines Kollagen 10 000 mg", en: "Liquid Marine Collagen 10 000 mg", tr: "Sıvı Deniz Kolajeni 10 000 mg" },
-    price: 35.95, category: "beauty",
+    price: 35.95, category: "collagen",
     images: ["images/products/1210.png"],
     inStock: true, stock: 16,
     description: {
@@ -22,7 +22,7 @@ const PRODUCTS = [
   {
     id: 2, sku: 2697,
     name: { fr: "Collagène Marin 12 500 mg", de: "Marines Kollagen 12 500 mg", en: "Marine Collagen 12 500 mg", tr: "Deniz Kolajeni 12 500 mg" },
-    price: 40.50, category: "beauty",
+    price: 40.50, category: "collagen",
     images: ["images/products/2697.png"],
     inStock: true, stock: 16,
     description: {
@@ -36,7 +36,7 @@ const PRODUCTS = [
   {
     id: 3, sku: 2594,
     name: { fr: "Collagène Marin 15 000 mg", de: "Marines Kollagen 15 000 mg", en: "Marine Collagen 15 000 mg", tr: "Deniz Kolajeni 15 000 mg" },
-    price: 49.95, category: "beauty",
+    price: 49.95, category: "collagen",
     images: ["images/products/2594.png"],
     inStock: true, stock: 16,
     description: {
@@ -50,7 +50,7 @@ const PRODUCTS = [
   {
     id: 4, sku: 2534,
     name: { fr: "Collagène Marin Gold Retinol 12 500 mg", de: "Marines Kollagen Gold Retinol 12 500 mg", en: "Marine Collagen Gold Retinol 12 500 mg", tr: "Deniz Kolajeni Gold Retinol 12 500 mg" },
-    price: 40.50, category: "beauty",
+    price: 40.50, category: "collagen",
     images: ["images/products/2534.png"],
     inStock: true, stock: 16,
     description: {
@@ -64,7 +64,7 @@ const PRODUCTS = [
   {
     id: 5, sku: 2634,
     name: { fr: "Collagène Marin Menoplus", de: "Marines Kollagen Menoplus", en: "Marine Collagen Menoplus", tr: "Deniz Kolajeni Menoplus" },
-    price: 37.80, category: "beauty",
+    price: 37.80, category: "collagen",
     images: ["images/products/2634.png"],
     inStock: true, stock: 16,
     description: {
@@ -78,7 +78,7 @@ const PRODUCTS = [
   {
     id: 6, sku: 2482,
     name: { fr: "Joint Support Max — Articulations", de: "Joint Support Max — Gelenke", en: "Joint Support Max", tr: "Joint Support Max — Eklem Desteği" },
-    price: 31.95, category: "beauty",
+    price: 31.95, category: "collagen",
     images: ["images/products/2482.png"],
     inStock: true, stock: 16,
     description: {
@@ -92,7 +92,7 @@ const PRODUCTS = [
   {
     id: 7, sku: 2633,
     name: { fr: "Magnésium Bisglycinate Liquide", de: "Magnesiumbisglycinat Flüssig", en: "Liquid Magnesium Bisglycinate", tr: "Sıvı Magnezyum Bisglisinat" },
-    price: 24.95, category: "beauty",
+    price: 24.95, category: "vitamins",
     images: ["images/products/2633.png"],
     inStock: true, stock: 16,
     description: {
@@ -106,7 +106,7 @@ const PRODUCTS = [
   {
     id: 8, sku: 2718,
     name: { fr: "Multivitamines Max Strength Ultra+", de: "Multivitamin Max Strength Ultra+", en: "Max Strength Ultra+ Multivitamin", tr: "Max Strength Ultra+ Multivitamin" },
-    price: 29.95, category: "beauty",
+    price: 29.95, category: "vitamins",
     images: ["images/products/2718.png"],
     inStock: true, stock: 16,
     description: {
@@ -120,7 +120,7 @@ const PRODUCTS = [
   {
     id: 9, sku: 2715,
     name: { fr: "Multivitamines Homme + Testostérone", de: "Männer-Multivitamin + Testosteron", en: "Man Multivitamin + Testosterone Support", tr: "Erkek Multivitamin + Testosteron Desteği" },
-    price: 29.95, category: "beauty",
+    price: 29.95, category: "vitamins",
     images: ["images/products/2715.png"],
     inStock: true, stock: 16,
     description: {
@@ -134,7 +134,7 @@ const PRODUCTS = [
   {
     id: 10, sku: 2714,
     name: { fr: "Multivitamines Femme + Cheveux", de: "Frauen-Multivitamin + Haar", en: "Woman Multivitamin + Hair Support", tr: "Kadın Multivitamin + Saç Desteği" },
-    price: 29.95, category: "beauty",
+    price: 29.95, category: "vitamins",
     images: ["images/products/2714.png"],
     inStock: true, stock: 16,
     description: {
@@ -148,7 +148,7 @@ const PRODUCTS = [
   {
     id: 11, sku: 2719,
     name: { fr: "Hair Skin & Nails Luxe", de: "Hair Skin & Nails Luxe", en: "Hair Skin & Nails Luxe", tr: "Hair Skin & Nails Luxe — Saç Cilt Tırnak" },
-    price: 24.95, category: "beauty",
+    price: 24.95, category: "vitamins",
     images: ["images/products/2719.png"],
     inStock: true, stock: 16,
     description: {
@@ -162,7 +162,7 @@ const PRODUCTS = [
   {
     id: 12, sku: 2720,
     name: { fr: "Acide Hyaluronique Luxe", de: "Hyaluronsäure Luxe", en: "Hyaluronic Acid Luxe", tr: "Hyaluronik Asit Luxe" },
-    price: 24.95, category: "beauty",
+    price: 24.95, category: "vitamins",
     images: ["images/products/2720.png"],
     inStock: true, stock: 16,
     description: {
@@ -176,7 +176,7 @@ const PRODUCTS = [
   {
     id: 13, sku: 2721,
     name: { fr: "Probiotiques Encapsulés Max", de: "Verkapselte Probiotika Max", en: "Encapsulated Probiotics Max", tr: "Kapsüllenmiş Probiyotik Max" },
-    price: 24.95, category: "beauty",
+    price: 24.95, category: "vitamins",
     images: ["images/products/2721.png"],
     inStock: true, stock: 16,
     description: {
@@ -190,7 +190,7 @@ const PRODUCTS = [
   {
     id: 14, sku: 1150,
     name: { fr: "Collagène Marin en Poudre 300 g", de: "Marines Kollagenpulver 300 g", en: "Marine Collagen Powder 300 g", tr: "Toz Deniz Kolajeni 300 g" },
-    price: 32.95, category: "beauty",
+    price: 32.95, category: "collagen",
     images: ["images/products/1150.png"],
     inStock: true, stock: 18,
     description: {
@@ -204,7 +204,7 @@ const PRODUCTS = [
   {
     id: 15, sku: 2478,
     name: { fr: "Shots Collagène Marin 10 000 mg (30x25 ml)", de: "Marine Kollagen Shots 10 000 mg (30x25 ml)", en: "Marine Collagen Shots 10 000 mg (30x25 ml)", tr: "Deniz Kolajeni Shot 10 000 mg (30x25 ml)" },
-    price: 63.80, category: "beauty",
+    price: 63.80, category: "shots",
     images: ["images/products/2478.png"],
     inStock: true, stock: 6,
     description: {
@@ -218,7 +218,7 @@ const PRODUCTS = [
   {
     id: 16, sku: 2601,
     name: { fr: "Shots Collagène Marin 12 500 mg (30x25 ml)", de: "Marine Kollagen Shots 12 500 mg (30x25 ml)", en: "Marine Collagen Shots 12 500 mg (30x25 ml)", tr: "Deniz Kolajeni Shot 12 500 mg (30x25 ml)" },
-    price: 71.82, category: "beauty",
+    price: 71.82, category: "shots",
     images: ["images/products/2601.png"],
     inStock: true, stock: 6,
     description: {
@@ -232,7 +232,7 @@ const PRODUCTS = [
   {
     id: 17, sku: 2603,
     name: { fr: "Shots Collagène Marin 15 000 mg (30x25 ml)", de: "Marine Kollagen Shots 15 000 mg (30x25 ml)", en: "Marine Collagen Shots 15 000 mg (30x25 ml)", tr: "Deniz Kolajeni Shot 15 000 mg (30x25 ml)" },
-    price: 95.80, category: "beauty",
+    price: 95.80, category: "shots",
     images: ["images/products/2603.png"],
     inStock: true, stock: 6,
     description: {
@@ -246,7 +246,7 @@ const PRODUCTS = [
   {
     id: 18, sku: 2453,
     name: { fr: "Collagen Deluxe Shots (30x25 ml)", de: "Collagen Deluxe Shots (30x25 ml)", en: "Collagen Deluxe Shots (30x25 ml)", tr: "Collagen Deluxe Shot (30x25 ml)" },
-    price: 89.99, category: "beauty",
+    price: 89.99, category: "shots",
     images: ["images/products/2453.png"],
     inStock: true, stock: 6,
     description: {
@@ -260,7 +260,7 @@ const PRODUCTS = [
   {
     id: 19, sku: 2606,
     name: { fr: "Collagen Retinol Shots (30x25 ml)", de: "Collagen Retinol Shots (30x25 ml)", en: "Collagen Retinol Shots (30x25 ml)", tr: "Collagen Retinol Shot (30x25 ml)" },
-    price: 99.99, category: "beauty",
+    price: 99.99, category: "shots",
     images: ["images/products/2606.png"],
     inStock: true, stock: 6,
     description: {
@@ -274,7 +274,7 @@ const PRODUCTS = [
   {
     id: 20, sku: 2523,
     name: { fr: "Crème de Jour au Rétinol 50 ml", de: "Retinol-Tagescreme 50 ml", en: "Retinol Day Cream 50 ml", tr: "Retinol Gündüz Kremi 50 ml" },
-    price: 29.95, category: "beauty",
+    price: 29.95, category: "cosmetics",
     images: ["images/products/2523.png"],
     inStock: true, stock: 20,
     description: {

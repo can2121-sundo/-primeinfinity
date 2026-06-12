@@ -987,3 +987,40 @@ Object.assign(translations.tr, {
   b2b_stat1: "Katalogdaki premium ürün", b2b_stat2: "Dil — FR · DE · EN · IT · TR",
   b2b_stat3: "Aktif satış kanalı", b2b_stat4: "AB teslimatı (iş günü)"
 });
+
+/* === Yeniden tasarım: B2B hero + gerçek kategoriler === */
+Object.assign(translations.fr, {
+  b2bhero_label: "Distribution Européenne B2B",
+  b2bhero_l1: "VOTRE MARQUE,", b2bhero_l2: "EN EUROPE",
+  b2bhero_desc: "Nous donnons aux marques le pouvoir de conquérir les marchés européens — distribution multicanale, multilingue et sécurisée.",
+  shop_visit: "Voir la Boutique",
+  cat_collagen: "COLLAGÈNE", cat_vitamins: "VITAMINES", cat_shots: "SHOTS COLLAGÈNE", cat_cosmetics: "COSMÉTIQUE"
+});
+Object.assign(translations.en, {
+  b2bhero_label: "European B2B Distribution",
+  b2bhero_l1: "YOUR BRAND,", b2bhero_l2: "IN EUROPE",
+  b2bhero_desc: "We empower brands to conquer European markets — multichannel, multilingual and secure distribution.",
+  shop_visit: "Visit the Shop",
+  cat_collagen: "COLLAGEN", cat_vitamins: "VITAMINS", cat_shots: "COLLAGEN SHOTS", cat_cosmetics: "COSMETICS"
+});
+Object.assign(translations.de, {
+  b2bhero_label: "Europäischer B2B-Vertrieb",
+  b2bhero_l1: "IHRE MARKE,", b2bhero_l2: "IN EUROPA",
+  b2bhero_desc: "Wir geben Marken die Kraft, europäische Märkte zu erobern — mehrkanaliger, mehrsprachiger und sicherer Vertrieb.",
+  shop_visit: "Zum Shop",
+  cat_collagen: "KOLLAGEN", cat_vitamins: "VITAMINE", cat_shots: "KOLLAGEN-SHOTS", cat_cosmetics: "KOSMETIK"
+});
+Object.assign(translations.it, {
+  b2bhero_label: "Distribuzione B2B Europea",
+  b2bhero_l1: "IL TUO MARCHIO,", b2bhero_l2: "IN EUROPA",
+  b2bhero_desc: "Diamo ai marchi il potere di conquistare i mercati europei — distribuzione multicanale, multilingue e sicura.",
+  shop_visit: "Visita il Negozio",
+  cat_collagen: "COLLAGENE", cat_vitamins: "VITAMINE", cat_shots: "SHOT DI COLLAGENE", cat_cosmetics: "COSMETICI"
+});
+Object.assign(translations.tr, {
+  b2bhero_label: "Avrupa B2B Distribütörlüğü",
+  b2bhero_l1: "MARKANIZ,", b2bhero_l2: "AVRUPA'DA",
+  b2bhero_desc: "Markalara Avrupa pazarlarını fethetme gücü veriyoruz — çok kanallı, çok dilli ve güvenli dağıtım.",
+  shop_visit: "Mağazaya Git",
+  cat_collagen: "KOLAJEN", cat_vitamins: "VİTAMİNLER", cat_shots: "KOLAJEN SHOT", cat_cosmetics: "KOZMETİK"
+});

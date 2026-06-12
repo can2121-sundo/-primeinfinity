@@ -118,15 +118,17 @@ src="https://www.facebook.com/tr?id=969904029147074&ev=PageView&noscript=1"
       const cat = params.get('cat') || 'all';
       const lang = currentLang || 'fr';
       const t = (typeof translations !== 'undefined' && translations[lang]) ? translations[lang] : translations['fr'];
-      const products = getProductsByCategory(cat);
+      const products = getProductsByCategory(cat === 'beauty' ? 'all' : cat);
 
-      const catAllLabel = { fr: 'Tous les produits', en: 'All Products', de: 'Alle Produkte' };
+      const catAllLabel = { fr: 'Tous les produits', en: 'All Products', de: 'Alle Produkte', it: 'Tutti i prodotti', tr: 'Tüm ürünler' };
       const catLabel = {
-        fr: { electronics: 'Électronique', home: 'Maison & Vie', beauty: 'Beauté', fashion: 'Mode', trending: 'Tendances' },
-        en: { electronics: 'Electronics', home: 'Home & Living', beauty: 'Beauty', fashion: 'Fashion', trending: 'Trending' },
-        de: { electronics: 'Elektronik', home: 'Haus & Leben', beauty: 'Schönheit', fashion: 'Mode', trending: 'Trends' }
+        fr: { collagen: 'Collagène', vitamins: 'Vitamines', shots: 'Shots Collagène', cosmetics: 'Cosmétique', beauty: 'Beauté' },
+        en: { collagen: 'Collagen', vitamins: 'Vitamins', shots: 'Collagen Shots', cosmetics: 'Cosmetics', beauty: 'Beauty' },
+        de: { collagen: 'Kollagen', vitamins: 'Vitamine', shots: 'Kollagen-Shots', cosmetics: 'Kosmetik', beauty: 'Schönheit' },
+        it: { collagen: 'Collagene', vitamins: 'Vitamine', shots: 'Shot di Collagene', cosmetics: 'Cosmetici', beauty: 'Bellezza' },
+        tr: { collagen: 'Kolajen', vitamins: 'Vitaminler', shots: 'Kolajen Shot', cosmetics: 'Kozmetik', beauty: 'Güzellik' }
       };
-      const countLabel = { fr: 'produit(s) trouvé(s)', en: 'product(s) found', de: 'Produkt(e) gefunden' };
+      const countLabel = { fr: 'produit(s) trouvé(s)', en: 'product(s) found', de: 'Produkt(e) gefunden', it: 'prodotto/i trovato/i', tr: 'ürün bulundu' };
 
       const catName = cat === 'all'
         ? (catAllLabel[lang] || catAllLabel.fr)
