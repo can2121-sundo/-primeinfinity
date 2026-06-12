@@ -140,6 +140,7 @@ const translations = {
     our_vision_desc: "Créer le pont entre les marques internationales premium et les clients européens exigeants. Nous commençons par des partenariats exclusifs et évoluons progressivement vers une marketplace multi-marques de référence.",
     our_values: "Nos Valeurs",
     our_platforms: "Nos Plateformes",
+    our_partners: "Marques Partenaires",
     our_platforms_desc: "Nous vendons sur les plateformes sociales les plus dynamiques du moment pour toucher nos clients là où ils se trouvent.",
     value1_desc_long: "Présence internationale dans les principaux marchés mondiaux. Nous connectons les meilleures marques aux clients européens. Notre réseau logistique couvre l'ensemble du continent pour garantir une disponibilité optimale des produits premium que nous distribuons.",
     value2_desc_long: "Relations durables et transparentes avec nos partenaires et clients. La confiance est au cœur de notre business model. Nous croyons que la transparence totale sur nos processus et nos engagements est la clé d'une collaboration fructueuse à long terme.",
@@ -338,6 +339,7 @@ const translations = {
     our_mission: "Our Mission",
     our_mission_desc: "As an authorized seller, our mission is to make premium products accessible to everyone, everywhere in the world. We rigorously select each product to guarantee quality, reliability and total customer satisfaction.",
     our_platforms: "Our Platforms",
+    our_partners: "Partner Brands",
     our_platforms_desc: "We sell on the most dynamic social platforms to reach our customers wherever they are.",
     our_vision: "Our Vision",
     our_vision_desc: "Building the bridge between premium international brands and demanding European customers. We start with exclusive partnerships and progressively evolve into a leading multi-brand marketplace.",
@@ -441,10 +443,14 @@ function applyLanguage(lang) {
 
   // Update html lang attribute
   document.documentElement.lang = lang;
+
+  // Update dropdown current code
+  const codeEl = document.querySelector('.lang-current-code');
+  if (codeEl) codeEl.textContent = lang.toUpperCase();
 }
 
 function toggleLanguage() {
-  const langs = ['fr', 'de', 'en'];
+  const langs = ['fr', 'de', 'en', 'it', 'tr'];
   const idx = langs.indexOf(currentLang);
   const nextLang = langs[(idx + 1) % langs.length];
   applyLanguage(nextLang);
@@ -458,6 +464,15 @@ function initI18n() {
     });
   });
 
+  // Language dropdown toggle
+  const dd = document.querySelector('.lang-dropdown');
+  const cur = document.querySelector('.lang-current');
+  if (dd && cur) {
+    cur.addEventListener('click', (e) => { e.stopPropagation(); dd.classList.toggle('open'); });
+    document.addEventListener('click', () => dd.classList.remove('open'));
+    dd.querySelectorAll('.lang-flag').forEach(b => b.addEventListener('click', () => dd.classList.remove('open')));
+  }
+
   // Detect language: saved first, then browser, then default
   const savedLang = localStorage.getItem('primeinfinity-lang');
   if (savedLang && translations[savedLang]) {
@@ -466,6 +481,8 @@ function initI18n() {
     const browserLang = navigator.language || navigator.userLanguage;
     if (browserLang.startsWith('de')) applyLanguage('de');
     else if (browserLang.startsWith('fr')) applyLanguage('fr');
+    else if (browserLang.startsWith('it')) applyLanguage('it');
+    else if (browserLang.startsWith('tr')) applyLanguage('tr');
     else applyLanguage('en');
   }
 }
@@ -597,6 +614,7 @@ translations.de = {
   our_mission: "Unsere Mission",
   our_mission_desc: "Als autorisierter Verkäufer ist es unsere Mission, Premium-Produkte für alle überall auf der Welt zugänglich zu machen. Wir wählen jedes Produkt sorgfältig aus, um Qualität, Zuverlässigkeit und vollständige Kundenzufriedenheit zu gewährleisten.",
   our_platforms: "Unsere Plattformen",
+  our_partners: "Partnermarken",
   our_platforms_desc: "Wir verkaufen auf den dynamischsten sozialen Plattformen, um unsere Kunden dort zu erreichen, wo sie sind.",
   our_vision: "Unsere Vision",
   our_vision_desc: "Die Brücke zwischen Premium-Marken und anspruchsvollen Kunden weltweit schlagen. Wir beginnen mit exklusiven Partnerschaften und entwickeln uns schrittweise zu einer führenden Multi-Brand-Marktplatz.",
@@ -658,4 +676,182 @@ translations.de = {
   alert_subscribe_thanks: "Vielen Dank für Ihr Abonnement! Wir werden Sie bald kontaktieren.",
   alert_subscribe_error: "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
   alert_form_required: "Bitte füllen Sie alle Pflichtfelder aus.",
+};
+
+translations.it = {
+  nav_home: "Home", nav_about: "Chi Siamo", nav_contact: "Contatti", nav_register: "Registrati",
+  hero_title: "POSSIBILITÀ INFINITE",
+  hero_subtitle: "PrimeInfinity — Il vostro partner per un commercio internazionale senza limiti",
+  hero_cta: "Contattaci", hero_shop_now: "Acquista Ora →", hero_discover: "Scopri di Più",
+  hero_label_1: "Prodotti Premium", hero_title_line1: "POSSIBILITÀ", hero_title_line2: "INFINITE",
+  hero_desc_1: "Vi offriamo i migliori prodotti di qualità di marchi affidabili, disponibili esclusivamente nel nostro negozio ufficiale online.",
+  hero_label_2: "Rete Globale", hero_title2_line1: "CONSEGNA", hero_title2_line2: "MONDIALE",
+  hero_desc_2: "Dall'Asia all'Europa, colleghiamo i migliori marchi alla vostra porta con spedizioni internazionali rapide e sicure.",
+  hero_label_3: "Qualità Affidabile", hero_title3_line1: "ACQUISTI", hero_title3_line2: "SICURI",
+  hero_desc_3: "La vostra sicurezza è la nostra priorità. Pagamenti criptati e protezione dell'acquirente su ogni ordine.",
+  scroll_text: "Scopri",
+  section_features: "I Nostri Punti di Forza", section_features_desc: "Cosa rende diversa PrimeInfinity",
+  card1_title: "Rete Globale", card1_desc: "Presenza internazionale nei principali mercati mondiali. Colleghiamo i migliori marchi ai clienti di tutto il mondo.",
+  card2_title: "Partner Affidabile", card2_desc: "Relazioni durature e trasparenti con i nostri partner e clienti. La fiducia è al centro del nostro modello di business.",
+  card3_title: "Commercio Sicuro", card3_desc: "Pagamenti sicuri e protezione garantita per ogni transazione. La vostra sicurezza è la nostra priorità assoluta.",
+  card4_title: "Consegna Rapida", card4_desc: "Consegna internazionale rapida e affidabile. Lavoriamo con i migliori corrieri per servirvi.",
+  card5_title: "Crescita Sostenibile", card5_desc: "Soluzioni innovative per una crescita continua e responsabile. Investiamo nel futuro del commercio.",
+  browse_categories: "Sfoglia le Categorie",
+  cat_electronics: "ELETTRONICA", cat_home: "CASA & VITA", cat_beauty: "BELLEZZA", cat_fashion: "MODA", cat_trending: "TENDENZE",
+  shop_now_cat: "Acquista Ora →", browse_categories_sub: "Trovate ciò che cercate nei nostri universi",
+  fast_shipping: "Spedizione Rapida", fast_shipping_desc: "In tutto il mondo",
+  secure_payments: "Pagamento Sicuro", secure_payments_desc: "Pagamento 100% Sicuro",
+  premium_support: "Supporto Premium", premium_support_desc: "Assistenza Clienti 24/7",
+  trusted_seller: "Venditore Affidabile", trusted_seller_desc: "Venditore Verificato e Certificato",
+  best_sellers: "I Più Venduti",
+  prod_headphones: "Cuffie Wireless", prod_watch: "Braccialetto Fitness Smart", prod_speaker: "Altoparlante Portatile", prod_charger: "Stazione di Ricarica Wireless",
+  buy_now: "Acquista Ora", add_to_cart: "Aggiungi al Carrello",
+  in_stock: "Disponibile", out_of_stock: "⚠️ Esaurito",
+  out_of_stock_detail: "⚠️ Esaurito — Questo prodotto è temporaneamente non disponibile",
+  meta_category: "Categoria: Bellezza", meta_free_shipping: "Spedizione gratuita da €50",
+  cart_title: "Il Tuo Carrello", cart_empty_title: "Il tuo carrello è vuoto",
+  cart_empty_desc: "Scopri i nostri prodotti e aggiungili al carrello.", cart_continue: "Continua gli Acquisti",
+  cart_summary: "Riepilogo", cart_subtotal: "Subtotale", cart_shipping: "Spedizione", cart_free: "Gratuita",
+  cart_total: "Totale", cart_checkout: "Procedi all'Ordine", cart_remove: "Rimuovi", toast_added: "aggiunto al carrello",
+  checkout_summary: "Riepilogo dell'Ordine", confirm_order: "Conferma Ordine",
+  order_success_title: "Grazie per il tuo ordine!", order_success_desc: "Il tuo ordine è stato ricevuto. Ti contatteremo presto.",
+  back_to_home: "Torna alla Home", reviews: "recensioni",
+  about_label: "Chi è PrimeInfinity", about_title: "Una nuova era del commercio premium",
+  about_desc: "PrimeInfinity è un marchio internazionale di e-commerce specializzato nella distribuzione di prodotti premium in tutto il mondo. Il nostro negozio online ufficiale vi offre un'esperienza di acquisto senza pari.",
+  about_cta: "Scopri di più",
+  newsletter_title: "Sii il primo a saperlo",
+  newsletter_desc: "Iscriviti per ricevere le nostre offerte esclusive ed essere avvisato del lancio del nostro negozio.",
+  newsletter_placeholder: "Il tuo indirizzo email", newsletter_button: "Iscriviti", newsletter_email_text: "O contattaci direttamente:",
+  footer_tagline: "PrimeInfinity — Commercio internazionale senza limiti",
+  footer_quicklinks: "Link Rapidi", footer_contact: "Contatti", footer_follow: "Seguici",
+  footer_phone: "Telefono: Presto disponibile", footer_service: "Servizio Clienti",
+  footer_newsletter_title: "Newsletter", footer_newsletter_desc: "Iscriviti per ricevere novità e offerte esclusive.",
+  footer_subscribe: "Iscriviti", footer_shipping: "Spedizione e Consegna", footer_returns: "Resi e Rimborsi",
+  footer_terms: "Termini e Condizioni", footer_privacy: "Informativa sulla Privacy", footer_faq: "FAQ",
+  footer_shop: "Negozio", footer_categories: "Categorie",
+  copyright: "© 2026 PrimeInfinity. Tutti i diritti riservati.",
+  about_page_title: "La Nostra Missione", breadcrumb_home: "Home", breadcrumb_about: "Chi Siamo",
+  who_we_are: "Chi siamo?",
+  who_we_are_desc: "PrimeInfinity è un marchio internazionale di e-commerce che offre prodotti premium selezionati con cura. Operiamo tramite il nostro negozio ufficiale e partner globali per offrire un'esperienza di acquisto fluida e sicura in tutto il mondo.",
+  our_mission: "La Nostra Missione",
+  our_mission_desc: "Come venditore autorizzato, la nostra missione è rendere i prodotti premium accessibili a tutti, ovunque nel mondo. Selezioniamo rigorosamente ogni prodotto per garantire qualità, affidabilità e totale soddisfazione dei clienti.",
+  our_vision: "La Nostra Visione",
+  our_vision_desc: "Creare il ponte tra i marchi internazionali premium e i clienti europei esigenti. Iniziamo con partnership esclusive ed evolviamo progressivamente verso un marketplace multimarca di riferimento.",
+  our_values: "I Nostri Valori",
+  our_platforms: "Le Nostre Piattaforme", our_partners: "Marchi Partner",
+  our_platforms_desc: "Vendiamo sulle piattaforme social più dinamiche del momento per raggiungere i nostri clienti ovunque si trovino.",
+  value1_desc_long: "Presenza internazionale nei principali mercati mondiali. Colleghiamo i migliori marchi ai clienti europei. La nostra rete logistica copre l'intero continente.",
+  value2_desc_long: "Relazioni durature e trasparenti con i nostri partner e clienti. La fiducia è al centro del nostro modello di business.",
+  value3_desc_long: "Pagamenti sicuri e protezione garantita per ogni transazione. La vostra sicurezza è la nostra priorità assoluta. Utilizziamo le tecnologie di crittografia più avanzate.",
+  value4_desc_long: "Consegna internazionale rapida e affidabile. Lavoriamo con i migliori corrieri per servirvi.",
+  value5_desc_long: "Soluzioni innovative per una crescita continua e responsabile. Investiamo nel futuro del commercio.",
+  coming_soon_box: "La nostra prima collezione esclusiva sarà presto disponibile. Restate connessi per scoprire i nostri lanci e le offerte di lancio.",
+  cta_title: "Una domanda? Contattaci.", cta_button: "Contattaci",
+  contact_title: "Contatta PrimeInfinity", contact_subtitle: "Siamo qui per rispondere alle tue domande.",
+  label_name: "Nome", label_email: "Email", label_subject: "Oggetto", label_message: "Messaggio",
+  placeholder_name: "Il tuo nome", placeholder_email: "tua@email.com", placeholder_subject: "Oggetto del tuo messaggio", placeholder_message: "Il tuo messaggio...",
+  button_send: "Invia", contact_email_label: "contact@primeinfinity.fr",
+  contact_phone: "Telefono: Presto disponibile", contact_address: "Indirizzo: Francia", email: "Email",
+  loader_text: "Caricamento dell'esperienza PrimeInfinity...",
+  reg_title: "Unisciti a PrimeInfinity", reg_subtitle: "Crea il tuo account in pochi semplici passaggi",
+  reg_step1_title: "La Tua Email", reg_step1_desc: "Inserisci il tuo indirizzo email per iniziare", reg_email: "Indirizzo Email",
+  reg_step2_title: "Indirizzo di Consegna", reg_step2_desc: "Dove desideri ricevere i tuoi ordini?",
+  reg_address1: "Indirizzo riga 1", reg_address2: "Indirizzo riga 2 (facoltativo)", reg_city: "Città", reg_zip: "CAP", reg_country: "Paese",
+  reg_step3_title: "Informazioni di Pagamento", reg_step3_desc: "I tuoi dati sono sicuri e criptati",
+  reg_card_name: "Nome sulla carta", reg_card_number: "Numero di carta", reg_card_expiry: "Data di scadenza", reg_card_cvv: "CVV",
+  reg_step4_title: "Numero di Telefono", reg_step4_desc: "Per contattarti riguardo ai tuoi ordini", reg_phone: "Numero di telefono",
+  reg_next: "Avanti", reg_back: "Indietro", reg_finish: "Completa",
+  reg_success: "Registrazione completata! Benvenuto in PrimeInfinity.",
+  alert_subscribe_thanks: "Grazie per l'iscrizione! Ti contatteremo presto.",
+  alert_subscribe_error: "Inserisci un indirizzo email valido.",
+  alert_form_required: "Compila tutti i campi obbligatori."
+};
+
+translations.tr = {
+  nav_home: "Ana Sayfa", nav_about: "Hakkımızda", nav_contact: "İletişim", nav_register: "Kayıt Ol",
+  hero_title: "SONSUZ OLASILIKLAR",
+  hero_subtitle: "PrimeInfinity — Sınırsız uluslararası ticaret için partneriniz",
+  hero_cta: "Bize Ulaşın", hero_shop_now: "Hemen Satın Al →", hero_discover: "Daha Fazla Keşfet",
+  hero_label_1: "Premium Ürünler", hero_title_line1: "SONSUZ", hero_title_line2: "OLASILIKLAR",
+  hero_desc_1: "Güvenilir markaların en kaliteli ürünlerini, yalnızca resmi online mağazamızda sizlerle buluşturuyoruz.",
+  hero_label_2: "Küresel Ağ", hero_title2_line1: "DÜNYA ÇAPINDA", hero_title2_line2: "TESLİMAT",
+  hero_desc_2: "Asya'dan Avrupa'ya, en iyi markaları hızlı ve güvenli uluslararası kargo ile kapınıza getiriyoruz.",
+  hero_label_3: "Güvenilir Kalite", hero_title3_line1: "GÜVENLİ", hero_title3_line2: "ALIŞVERİŞ",
+  hero_desc_3: "Güvenliğiniz önceliğimizdir. Her siparişinizde şifreli ödeme ve alıcı koruması.",
+  scroll_text: "Keşfet",
+  section_features: "Güçlü Yönlerimiz", section_features_desc: "PrimeInfinity'yi farklı kılan nedir",
+  card1_title: "Küresel Ağ", card1_desc: "Dünyanın önde gelen pazarlarında uluslararası varlık. En iyi markaları dünyanın dört bir yanındaki müşterilerle buluşturuyoruz.",
+  card2_title: "Güvenilir Partner", card2_desc: "Partnerlerimiz ve müşterilerimizle kalıcı ve şeffaf ilişkiler. Güven, iş modelimizin merkezindedir.",
+  card3_title: "Güvenli Ticaret", card3_desc: "Her işlem için güvenli ödeme ve garantili koruma. Güvenliğiniz mutlak önceliğimizdir.",
+  card4_title: "Hızlı Teslimat", card4_desc: "Hızlı ve güvenilir uluslararası teslimat. Size hizmet için en iyi kargo firmalarıyla çalışıyoruz.",
+  card5_title: "Sürdürülebilir Büyüme", card5_desc: "Sürekli ve sorumlu büyüme için yenilikçi çözümler. Ticaretin geleceğine yatırım yapıyoruz.",
+  browse_categories: "Kategorilere Göz At",
+  cat_electronics: "ELEKTRONİK", cat_home: "EV & YAŞAM", cat_beauty: "GÜZELLİK", cat_fashion: "MODA", cat_trending: "TRENDLER",
+  shop_now_cat: "Hemen Al →", browse_categories_sub: "Aradığınızı dünyalarımızda bulun",
+  fast_shipping: "Hızlı Kargo", fast_shipping_desc: "Dünyanın her yerine",
+  secure_payments: "Güvenli Ödeme", secure_payments_desc: "%100 Güvenli Ödeme",
+  premium_support: "Premium Destek", premium_support_desc: "7/24 Müşteri Desteği",
+  trusted_seller: "Güvenilir Satıcı", trusted_seller_desc: "Doğrulanmış ve Sertifikalı Satıcı",
+  best_sellers: "Çok Satanlar",
+  prod_headphones: "Kablosuz Kulaklık", prod_watch: "Akıllı Bileklik", prod_speaker: "Taşınabilir Hoparlör", prod_charger: "Kablosuz Şarj İstasyonu",
+  buy_now: "Hemen Satın Al", add_to_cart: "Sepete Ekle",
+  in_stock: "Stokta", out_of_stock: "⚠️ Stokta Yok",
+  out_of_stock_detail: "⚠️ Stokta Yok — Bu ürün geçici olarak temin edilemiyor",
+  meta_category: "Kategori: Güzellik", meta_free_shipping: "€50 üzeri ücretsiz kargo",
+  cart_title: "Sepetiniz", cart_empty_title: "Sepetiniz boş",
+  cart_empty_desc: "Ürünlerimizi keşfedin ve sepetinize ekleyin.", cart_continue: "Alışverişe Devam Et",
+  cart_summary: "Özet", cart_subtotal: "Ara Toplam", cart_shipping: "Kargo", cart_free: "Ücretsiz",
+  cart_total: "Toplam", cart_checkout: "Siparişi Tamamla", cart_remove: "Kaldır", toast_added: "sepete eklendi",
+  checkout_summary: "Sipariş Özeti", confirm_order: "Siparişi Onayla",
+  order_success_title: "Siparişiniz için teşekkürler!", order_success_desc: "Siparişiniz alındı. En kısa sürede sizinle iletişime geçeceğiz.",
+  back_to_home: "Ana Sayfaya Dön", reviews: "değerlendirme",
+  about_label: "PrimeInfinity Hakkında", about_title: "Premium ticarette yeni bir dönem",
+  about_desc: "PrimeInfinity, premium ürünlerin dünya çapında dağıtımında uzmanlaşmış uluslararası bir e-ticaret markasıdır. Resmi online mağazamız size eşsiz bir alışveriş deneyimi sunar.",
+  about_cta: "Daha fazla bilgi",
+  newsletter_title: "İlk öğrenen siz olun",
+  newsletter_desc: "Özel tekliflerimizi almak ve mağazamızın açılışından haberdar olmak için kaydolun.",
+  newsletter_placeholder: "E-posta adresiniz", newsletter_button: "Kaydol", newsletter_email_text: "Veya doğrudan bize ulaşın:",
+  footer_tagline: "PrimeInfinity — Sınırsız uluslararası ticaret",
+  footer_quicklinks: "Hızlı Bağlantılar", footer_contact: "İletişim", footer_follow: "Bizi Takip Edin",
+  footer_phone: "Telefon: Yakında", footer_service: "Müşteri Hizmetleri",
+  footer_newsletter_title: "Bülten", footer_newsletter_desc: "Yenilikler ve özel tekliflerden haberdar olmak için kaydolun.",
+  footer_subscribe: "Kaydol", footer_shipping: "Kargo ve Teslimat", footer_returns: "İade ve Geri Ödeme",
+  footer_terms: "Şartlar ve Koşullar", footer_privacy: "Gizlilik Politikası", footer_faq: "SSS",
+  footer_shop: "Mağaza", footer_categories: "Kategoriler",
+  copyright: "© 2026 PrimeInfinity. Tüm hakları saklıdır.",
+  about_page_title: "Misyonumuz", breadcrumb_home: "Ana Sayfa", breadcrumb_about: "Hakkımızda",
+  who_we_are: "Biz kimiz?",
+  who_we_are_desc: "PrimeInfinity, özenle seçilmiş premium ürünler sunan uluslararası bir e-ticaret markasıdır. Dünya çapında akıcı ve güvenli bir alışveriş deneyimi sunmak için resmi mağazamız ve küresel partnerlerimiz aracılığıyla faaliyet gösteriyoruz.",
+  our_mission: "Misyonumuz",
+  our_mission_desc: "Yetkili satıcı olarak misyonumuz, premium ürünleri dünyanın her yerinde herkes için erişilebilir kılmaktır. Kalite, güvenilirlik ve tam müşteri memnuniyetini garanti etmek için her ürünü titizlikle seçiyoruz.",
+  our_vision: "Vizyonumuz",
+  our_vision_desc: "Premium uluslararası markalar ile seçici Avrupalı müşteriler arasında köprü kurmak. Özel ortaklıklarla başlıyor, adım adım çok markalı bir pazaryerine dönüşüyoruz.",
+  our_values: "Değerlerimiz",
+  our_platforms: "Platformlarımız", our_partners: "Partner Markalarımız",
+  our_platforms_desc: "Müşterilerimize bulundukları yerde ulaşmak için günümüzün en dinamik sosyal platformlarında satış yapıyoruz.",
+  value1_desc_long: "Dünyanın önde gelen pazarlarında uluslararası varlık. En iyi markaları Avrupalı müşterilerle buluşturuyoruz. Lojistik ağımız tüm kıtayı kapsıyor.",
+  value2_desc_long: "Partnerlerimiz ve müşterilerimizle kalıcı ve şeffaf ilişkiler. Güven, iş modelimizin merkezindedir.",
+  value3_desc_long: "Her işlem için güvenli ödeme ve garantili koruma. Güvenliğiniz mutlak önceliğimizdir. En gelişmiş şifreleme teknolojilerini kullanıyoruz.",
+  value4_desc_long: "Hızlı ve güvenilir uluslararası teslimat. Size hizmet için en iyi kargo firmalarıyla çalışıyoruz.",
+  value5_desc_long: "Sürekli ve sorumlu büyüme için yenilikçi çözümler. Ticaretin geleceğine yatırım yapıyoruz.",
+  coming_soon_box: "İlk özel koleksiyonumuz yakında satışta. Lansmanlarımızı ve açılış fırsatlarını kaçırmamak için bizi takip edin.",
+  cta_title: "Sorunuz mu var? Bize ulaşın.", cta_button: "Bize Ulaşın",
+  contact_title: "PrimeInfinity ile İletişime Geçin", contact_subtitle: "Sorularınızı yanıtlamak için buradayız.",
+  label_name: "Ad", label_email: "E-posta", label_subject: "Konu", label_message: "Mesaj",
+  placeholder_name: "Adınız", placeholder_email: "ornek@email.com", placeholder_subject: "Mesajınızın konusu", placeholder_message: "Mesajınız...",
+  button_send: "Gönder", contact_email_label: "contact@primeinfinity.fr",
+  contact_phone: "Telefon: Yakında", contact_address: "Adres: Fransa", email: "E-posta",
+  loader_text: "PrimeInfinity deneyimi yükleniyor...",
+  reg_title: "PrimeInfinity'ye Katılın", reg_subtitle: "Birkaç basit adımda hesabınızı oluşturun",
+  reg_step1_title: "E-postanız", reg_step1_desc: "Başlamak için e-posta adresinizi girin", reg_email: "E-posta Adresi",
+  reg_step2_title: "Teslimat Adresi", reg_step2_desc: "Siparişlerinizi nereye teslim edelim?",
+  reg_address1: "Adres satırı 1", reg_address2: "Adres satırı 2 (isteğe bağlı)", reg_city: "Şehir", reg_zip: "Posta Kodu", reg_country: "Ülke",
+  reg_step3_title: "Ödeme Bilgileri", reg_step3_desc: "Verileriniz güvende ve şifreli",
+  reg_card_name: "Kart üzerindeki isim", reg_card_number: "Kart numarası", reg_card_expiry: "Son kullanma tarihi", reg_card_cvv: "CVV",
+  reg_step4_title: "Telefon Numarası", reg_step4_desc: "Siparişlerinizle ilgili size ulaşabilmemiz için", reg_phone: "Telefon numarası",
+  reg_next: "İleri", reg_back: "Geri", reg_finish: "Tamamla",
+  reg_success: "Kayıt tamamlandı! PrimeInfinity'ye hoş geldiniz.",
+  alert_subscribe_thanks: "Kaydınız için teşekkürler! Yakında sizinle iletişime geçeceğiz.",
+  alert_subscribe_error: "Lütfen geçerli bir e-posta adresi girin.",
+  alert_form_required: "Lütfen tüm zorunlu alanları doldurun."
 };
