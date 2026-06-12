@@ -140,7 +140,14 @@ src="https://www.facebook.com/tr?id=969904029147074&ev=PageView&noscript=1"
         <h1>${catName}</h1>
         <p>${products.length} ${countLabel[lang] || countLabel.fr}</p>
       `;
-      document.getElementById('category-products').innerHTML = products.map((product, index) => `
+      if (products.length === 0) {
+        document.getElementById('category-products').innerHTML =
+          `<div class="glass-card" style="grid-column:1/-1;padding:46px 30px;text-align:center;max-width:640px;margin:0 auto;">
+             <div style="font-size:2rem;margin-bottom:12px;">✨</div>
+             <p style="margin:0;opacity:.9;">${t.coming_soon_box || 'Notre première collection exclusive sera bientôt disponible.'}</p>
+           </div>`;
+      }
+      else document.getElementById('category-products').innerHTML = products.map((product, index) => `
         <div class="product-card animate-on-scroll" data-delay="${0.1 + index * 0.1}">
           <div class="product-image">
             <img src="${product.images[0]}" alt="${getProductName(product, lang)}" loading="lazy">

@@ -4,7 +4,7 @@
    Fiyatlar: tedarikçi RRP · Stok: 1 koli başlangıç
    ============================================ */
 
-const PRODUCTS = [
+const PRODUCTS_ARCHIVE = [
   {
     id: 1, sku: 1210,
     name: { fr: "Collagène Marin Liquide 10 000 mg", de: "Flüssiges Marines Kollagen 10 000 mg", en: "Liquid Marine Collagen 10 000 mg", tr: "Sıvı Deniz Kolajeni 10 000 mg" },
@@ -286,6 +286,11 @@ const PRODUCTS = [
     rating: 4.6, reviews: 0
   }
 ];
+
+
+/* Ürünler geçici olarak yayından kaldırıldı — fotoğraflar gelince
+   asagidaki satiri  const PRODUCTS = PRODUCTS_ARCHIVE;  yapman yeterli. */
+const PRODUCTS = [];
 
 function getProduct(id) {
   return PRODUCTS.find(p => p.id === parseInt(id));
