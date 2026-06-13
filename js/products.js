@@ -288,9 +288,9 @@ const PRODUCTS_ARCHIVE = [
 ];
 
 
-/* Ürünler geçici olarak yayından kaldırıldı — fotoğraflar gelince
+/* Ürünler yayına alındı — mağaza/Boutique aktif (20 ürün + görsel).
    asagidaki satiri  const PRODUCTS = PRODUCTS_ARCHIVE;  yapman yeterli. */
-const PRODUCTS = [];
+const PRODUCTS = PRODUCTS_ARCHIVE;
 
 function getProduct(id) {
   return PRODUCTS.find(p => p.id === parseInt(id));
