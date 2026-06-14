@@ -57,7 +57,7 @@ src="https://www.facebook.com/tr?id=969904029147074&ev=PageView&noscript=1"
           </div>
         </div>
         <div class="nav-icons">
-          <a href="#" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg></a>
+          <a href="kategori.html" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg></a>
           <a href="#" aria-label="Account"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg></a>
           <a href="sepet.html" aria-label="Cart" class="nav-cart"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" /></svg><span class="cart-badge">0</span></a>
         </div>
@@ -117,12 +117,12 @@ src="https://www.facebook.com/tr?id=969904029147074&ev=PageView&noscript=1"
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
   <script>
-    (function() {
+    (function () {
       const params = new URLSearchParams(window.location.search);
       const cat = params.get('cat') || 'all';
       const lang = currentLang || 'fr';
       const t = (typeof translations !== 'undefined' && translations[lang]) ? translations[lang] : translations['fr'];
-      const products = getProductsByCategory(cat === 'beauty' ? 'all' : cat);
+      const allProducts = getProductsByCategory(cat === 'beauty' ? 'all' : cat);
 
       const catAllLabel = { fr: 'Tous les produits', en: 'All Products', de: 'Alle Produkte', it: 'Tutti i prodotti', tr: 'Tüm ürünler' };
       const catLabel = {
@@ -133,24 +133,29 @@ src="https://www.facebook.com/tr?id=969904029147074&ev=PageView&noscript=1"
         tr: { collagen: 'Kolajen', vitamins: 'Vitaminler', shots: 'Kolajen Shot', cosmetics: 'Kozmetik', beauty: 'Güzellik' }
       };
       const countLabel = { fr: 'produit(s) trouvé(s)', en: 'product(s) found', de: 'Produkt(e) gefunden', it: 'prodotto/i trovato/i', tr: 'ürün bulundu' };
+      const searchPh = { fr: 'Rechercher un produit…', en: 'Search a product…', de: 'Produkt suchen…', it: 'Cerca un prodotto…', tr: 'Ürün ara…' };
+      const noResult = { fr: 'Aucun produit trouvé', en: 'No product found', de: 'Kein Produkt gefunden', it: 'Nessun prodotto trovato', tr: 'Ürün bulunamadı' };
 
       const catName = cat === 'all'
         ? (catAllLabel[lang] || catAllLabel.fr)
         : ((catLabel[lang] || catLabel.fr)[cat] || cat);
 
-      document.getElementById('category-header').innerHTML = `
+      const header = document.getElementById('category-header');
+      const grid = document.getElementById('category-products');
+
+      header.innerHTML = `
         <h1>${catName}</h1>
-        <p>${products.length} ${countLabel[lang] || countLabel.fr}</p>
+        <p id="prod-count">${allProducts.length} ${countLabel[lang] || countLabel.fr}</p>
+        <div style="margin-top:18px;max-width:440px;position:relative;">
+          <input id="shop-search" type="search" autocomplete="off" placeholder="${searchPh[lang] || searchPh.fr}"
+            style="width:100%;padding:13px 18px 13px 44px;border-radius:30px;border:1px solid rgba(200,169,106,.45);background:rgba(255,255,255,.06);color:#fff;font-size:.95rem;outline:none;box-sizing:border-box;">
+          <svg style="position:absolute;left:16px;top:50%;transform:translateY(-50%);width:18px;height:18px;opacity:.7;" fill="none" viewBox="0 0 24 24" stroke="#c8a96a" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+        </div>
       `;
-      if (products.length === 0) {
-        document.getElementById('category-products').innerHTML =
-          `<div class="glass-card" style="grid-column:1/-1;padding:46px 30px;text-align:center;max-width:640px;margin:0 auto;">
-             <div style="font-size:2rem;margin-bottom:12px;">✨</div>
-             <p style="margin:0;opacity:.9;">${t.coming_soon_box || 'Notre première collection exclusive sera bientôt disponible.'}</p>
-           </div>`;
-      }
-      else document.getElementById('category-products').innerHTML = products.map((product, index) => `
-        <div class="product-card animate-on-scroll" data-delay="${0.1 + index * 0.1}">
+
+      function card(product, index) {
+        return `
+        <div class="product-card animate-on-scroll" data-delay="${0.05 + index * 0.05}">
           <div class="product-image">
             <img src="${product.images[0]}" alt="${getProductName(product, lang)}" loading="lazy">
           </div>
@@ -169,10 +174,30 @@ src="https://www.facebook.com/tr?id=969904029147074&ev=PageView&noscript=1"
               <button class="btn-outline btn-sm" onclick="Cart.addItem({id:${product.id},name:'${getProductName(product, lang).replace(/'/g, "\\'")}',price:${product.price},image:'${product.images[0]}'})">${t.add_to_cart || 'Panier'}</button>
             </div>
           </div>
-        </div>
-      `).join('');
+        </div>`;
+      }
+
+      function render(list) {
+        const countEl = document.getElementById('prod-count');
+        if (countEl) countEl.textContent = list.length + ' ' + (countLabel[lang] || countLabel.fr);
+        if (!list.length) {
+          grid.innerHTML = `<div class="glass-card" style="grid-column:1/-1;padding:46px 30px;text-align:center;max-width:640px;margin:0 auto;"><div style="font-size:2rem;margin-bottom:12px;">🔍</div><p style="margin:0;opacity:.9;">${noResult[lang] || noResult.fr}</p></div>`;
+        } else {
+          grid.innerHTML = list.map(card).join('');
+        }
+      }
+
+      if (allProducts.length === 0) {
+        grid.innerHTML = `<div class="glass-card" style="grid-column:1/-1;padding:46px 30px;text-align:center;max-width:640px;margin:0 auto;"><div style="font-size:2rem;margin-bottom:12px;">✨</div><p style="margin:0;opacity:.9;">${t.coming_soon_box || 'Notre première collection exclusive sera bientôt disponible.'}</p></div>`;
+      } else {
+        render(allProducts);
+        const input = document.getElementById('shop-search');
+        if (input) input.addEventListener('input', function () {
+          const q = this.value.trim().toLowerCase();
+          render(q ? allProducts.filter(p => getProductName(p, lang).toLowerCase().includes(q)) : allProducts);
+        });
+      }
     })();
   </script>
 </body>
 </html>
-
