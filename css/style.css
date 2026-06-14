@@ -2029,7 +2029,7 @@ a.category-card:hover .shop-now-link {
 
 /* ---------- Logo Image ---------- */
 .logo-img {
-  height: 46px;
+  height: 62px;
   width: auto;
   display: block;
   background-color: var(--bg-primary);
@@ -2042,7 +2042,7 @@ a.category-card:hover .shop-now-link {
 
 @media (max-width: 768px) {
   .logo-img {
-    height: 37px;
+    height: 48px;
   }
 }
 

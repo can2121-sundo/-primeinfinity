@@ -288,9 +288,11 @@ const PRODUCTS_ARCHIVE = [
 ];
 
 
-/* Ürünler şimdilik gizli — mağaza/Boutique 'yakında' mesajıyla duruyor.
-   Ürünler hazır olunca  const PRODUCTS = PRODUCTS_ARCHIVE;  yap. */
-const PRODUCTS = [];
+/* Mağaza/Boutique'te 10 farklı ürün gösteriliyor (değişik türler).
+   Tüm 20 ürün için:  const PRODUCTS = PRODUCTS_ARCHIVE;  yap. */
+const PRODUCTS = PRODUCTS_ARCHIVE.filter(function (p) {
+  return [1, 3, 7, 8, 11, 12, 13, 14, 17, 20].indexOf(p.id) !== -1;
+});
 
 function getProduct(id) {
   return PRODUCTS.find(p => p.id === parseInt(id));
