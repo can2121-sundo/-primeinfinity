@@ -199,7 +199,7 @@ function renderProductCards(lang) {
       <div class="product-info">
         <h3>${getProductName(product, lang)}</h3>
         <div class="product-price">${formatPrice(product.price)}</div>
-        ${product.inStock !== false && (product.stock === undefined || product.stock > 0) ? `<div class="product-stock"><span class="stock-dot"></span>${translations[lang]?.in_stock || 'En stock'}${typeof product.stock === 'number' ? ' · ' + product.stock : ''}</div>` : `<div class="product-stock" style="color:#ff4444;">${translations[lang]?.out_of_stock || 'Rupture de stock'}</div>`}
+        ${product.inStock !== false && (product.stock === undefined || product.stock > 0) ? `<div class="product-stock"><span class="stock-dot"></span>${translations[lang]?.in_stock || 'En stock'}</div>` : `<div class="product-stock" style="color:#ff4444;">${translations[lang]?.out_of_stock || 'Rupture de stock'}</div>`}
         ${product.reviews > 0 ? `<div class="product-stars">${renderStars(product.rating)}<span class="product-reviews">(${product.reviews})</span></div>` : ''}
         <div class="product-actions">
           <a href="urun.html?id=${product.id}" class="btn-primary btn-sm">${translations[lang]?.buy_now || 'Acheter Maintenant'}</a>
