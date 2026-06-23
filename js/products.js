@@ -15,10 +15,10 @@ const PRODUCTS_ARCHIVE = [
     },
     price: 35.95, category: "collagen",
     images: [
-      "images/products/2428_01.png",
-      "images/products/2428_02.png",
-      "images/products/2428_03.png",
-      "images/products/2428_04.png"
+      "images/products/2428_01.webp",
+      "images/products/2428_02.webp",
+      "images/products/2428_03.webp",
+      "images/products/2428_04.webp"
     ],
     inStock: true, stock: 16,
     description: {
@@ -41,10 +41,10 @@ const PRODUCTS_ARCHIVE = [
     },
     price: 40.50, category: "collagen",
     images: [
-      "images/products/2697_01.png",
-      "images/products/2697_02.png",
-      "images/products/2697_03.png",
-      "images/products/2697_04.png"
+      "images/products/2697_01.webp",
+      "images/products/2697_02.webp",
+      "images/products/2697_03.webp",
+      "images/products/2697_04.webp"
     ],
     inStock: true, stock: 16,
     description: {
@@ -67,10 +67,10 @@ const PRODUCTS_ARCHIVE = [
     },
     price: 24.95, category: "vitamins",
     images: [
-      "images/products/2719_01.png",
-      "images/products/2719_02.png",
-      "images/products/2719_03.png",
-      "images/products/2719_04.png"
+      "images/products/2719_01.webp",
+      "images/products/2719_02.webp",
+      "images/products/2719_03.webp",
+      "images/products/2719_04.webp"
     ],
     inStock: true, stock: 16,
     description: {
@@ -93,10 +93,10 @@ const PRODUCTS_ARCHIVE = [
     },
     price: 49.95, category: "collagen",
     images: [
-      "images/products/2594_01.png",
-      "images/products/2594_02.png",
-      "images/products/2594_03.png",
-      "images/products/2594_04.png"
+      "images/products/2594_01.webp",
+      "images/products/2594_02.webp",
+      "images/products/2594_03.webp",
+      "images/products/2594_04.webp"
     ],
     inStock: true, stock: 16,
     description: {
@@ -119,10 +119,10 @@ const PRODUCTS_ARCHIVE = [
     },
     price: 29.95, category: "vitamins",
     images: [
-      "images/products/2718_01.png",
-      "images/products/2718_02.png",
-      "images/products/2718_03.png",
-      "images/products/2718_04.png"
+      "images/products/2718_01.webp",
+      "images/products/2718_02.webp",
+      "images/products/2718_03.webp",
+      "images/products/2718_04.webp"
     ],
     inStock: true, stock: 16,
     description: {
@@ -145,10 +145,10 @@ const PRODUCTS_ARCHIVE = [
     },
     price: 24.95, category: "vitamins",
     images: [
-      "images/products/2633_01.png",
-      "images/products/2633_02.png",
-      "images/products/2633_03.png",
-      "images/products/2633_04.png"
+      "images/products/2633_01.webp",
+      "images/products/2633_02.webp",
+      "images/products/2633_03.webp",
+      "images/products/2633_04.webp"
     ],
     inStock: true, stock: 16,
     description: {
