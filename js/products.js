@@ -22,11 +22,11 @@ const PRODUCTS_ARCHIVE = [
     ],
     inStock: true, stock: 16,
     description: {
-      fr: "Supplément de collagène marin liquide de type I & III pour soutenir la peau, les cheveux, les ongles et les articulations. Formulation à haute absorption et faible poids moléculaire, idéale pour votre routine de beauté quotidienne.",
-      en: "Liquid marine collagen supplement Type I & III to support skin, hair, nails, and joints. High absorption and low molecular weight formula, ideal for your daily beauty and care routine.",
-      de: "Flüssiges marines Kollagen-Nahrungsergänzungsmittel Typ I & III zur Unterstützung von Haut, Haaren, Nägeln und Gelenken. Hohe Absorption und niedriges Molekulargewicht, ideal für Ihre tägliche Routine.",
-      it: "Integratore di collagene marino liquido Tipo I & III per sostenere pelle, capelli, unghie e articolazioni. Formula ad alto assorbimento e basso peso molecolare, ideale per la tua routine quotidiana.",
-      tr: "Sıvı formda deniz kolajeni takviyesidir. Tip I & III kolajen desteğiyle cilt, saç, tırnak ve eklem yapısını desteklemeye yöneliktir. Düşük molekül ağırlığı ve yüksek emilimli formülüyle günlük bakım rutini için idealdir."
+      fr: "Complément alimentaire liquide de collagène marin hydrolysé premium (Type I & III, 10 000 mg par dose quotidienne de 25 ml), sans sucre. Enrichi en acide hyaluronique, biotine (5 000 mcg), vitamines C, B5, B6, B12, D3, silice et sélénium. Une bouteille de 500 ml offre 20 doses journalières de 25 ml (gobelet doseur inclus sur le bouchon). Agiter avant utilisation.",
+      en: "Premium liquid hydrolysed marine collagen food supplement (Type I & III, 10,000 mg per 25 ml daily dose), sugar-free. Enriched with hyaluronic acid, biotin (5,000 mcg), vitamins C, B5, B6, B12, D3, silica, and selenium. One 500 ml bottle provides 20 daily servings of 25 ml (measuring cup included on the cap). Shake well before use.",
+      de: "Premium flüssiges hydrolysiertes marines Kollagen-Nahrungsergänzungsmittel (Typ I & III, 10.000 mg pro 25 ml Tagesdosis), zuckerfrei. Angereichert mit Hyaluronsäure, Biotin (5.000 mcg), Vitaminen C, B5, B6, B12, D3, Kieselgel und Selen. Eine 500-ml-Flasche enthält 20 Tagesdosen von 25 ml (Messbecher auf dem Verschluss enthalten). Vor Gebrauch gut schütteln.",
+      it: "Integratore alimentare liquido di collagene marino idrolizzato premium (Tipo I & III, 10.000 mg per dose giornaliera di 25 ml), senza zucchero. Arricchito con acido ialuronico, biotina (5.000 mcg), vitamine C, B5, B6, B12, D3, silice e selenio. Una bottiglia da 500 ml fornisce 20 dosi giornaliere da 25 ml (misurino incluso sul tappo). Agitare bene prima dell'uso.",
+      tr: "Sıvı formda premium hidrolize deniz kolajeni (Tip I & III, 25 ml'lik günlük doz başına 10.000 mg) takviyesidir, şekersizdir. Hyaluronik asit, biotin (5.000 mcg), C, B5, B6, B12, D3 vitaminleri, silis ve selenyum ile zenginleştirilmiştir. 500 ml'lik şişe, 25 ml'lik tam 1 ölçek üzerinden 20 günlük kullanım sunar (ölçek kabı kapak üzerindedir). Kullanmadan önce çalkalayınız."
     },
     rating: 4.8, reviews: 0
   },
@@ -48,11 +48,11 @@ const PRODUCTS_ARCHIVE = [
     ],
     inStock: true, stock: 16,
     description: {
-      fr: "Formule premium de collagène marin hautement dosée à 12 500 mg, enrichie en élastine, astaxanthine, vitamine K2 et D3 pour le bien-être général, l'élasticité de la peau et le soutien des cheveux.",
-      en: "Premium marine collagen formula with a high dose of 12,500 mg, enriched with elastin, astaxanthin, vitamin K2, and D3 for general wellness, skin elasticity, and hair support.",
-      de: "Premium-Formel mit 12.500 mg marinem Kollagen, angereichert mit Elastin, Astaxanthin, Vitamin K2 und D3 für Hautelastizität, Haare und allgemeines Wohlbefinden.",
-      it: "Formula premium di collagene marino ad alto dosaggio di 12.500 mg, arricchita con elastina, astaxantina, vitamina K2 e D3 per l'elasticità della pelle, i capelli e il benessere generale.",
-      tr: "Premium deniz kolajeni ailesinden 12.500 mg hidrolize deniz kolajeni takviyesidir. Elastin, astaksantin, vitamin K2 ve D3 gibi destekleyici aktiflerle zenginleştirilmiş formülüyle cilt esnekliğini ve saçları destekler."
+      fr: "Formule liquide hautement dosée à 12 500 mg de collagène marin hydrolysé par dose de 25 ml, sans sucre. Enrichie en élastine, astaxanthine, acide hyaluronique, biotine (5 000 mcg), vitamines C, D3, K2, silice et sélénium pour la fermeté de la peau et la beauté des cheveux. Une bouteille de 500 ml offre 20 doses de 25 ml (gobelet doseur inclus sur le bouchon). Agiter avant utilisation.",
+      en: "Highly dosed liquid formula with 12,500 mg of hydrolysed marine collagen per 25 ml dose, sugar-free. Enriched with elastin, astaxanthin, hyaluronic acid, biotin (5,000 mcg), vitamins C, D3, K2, silica, and selenium for skin firmness and hair beauty. One 500 ml bottle provides 20 servings of 25 ml (measuring cup included on the cap). Shake well before use.",
+      de: "Hochdosierte flüssige Formel mit 12.500 mg hydrolysiertem marinem Kollagen pro 25 ml Dosis, zuckerfrei. Angereichert mit Elastin, Astaxanthin, Hyaluronsäure, Biotin (5.000 mcg), Vitaminen C, D3, K2, Kieselgel und Selen für Hautstraffung und Haarschönheit. Eine 500-ml-Flasche bietet 20 Portionen à 25 ml (Messbecher auf dem Verschluss enthalten). Vor Gebrauch gut schütteln.",
+      it: "Formula liquida ad alto dosaggio con 12.500 mg di collagene marino idrolizzato per dose da 25 ml, senza zucchero. Arricchita con elastina, astaxantina, acido ialuronico, biotina (5.000 mcg), vitamine C, D3, K2, silice e selenio per l'elasticità cutanea e la bellezza dei capelli. Una bottiglia da 500 ml fornisce 20 dosi da 25 ml (misurino incluso sul tappo). Agitare bene prima dell'uso.",
+      tr: "25 ml'lik tek bir dozda 12.500 mg hidrolize deniz kolajeni içeren yüksek dozlu sıvı takviyedir, şekersizdir. Elastin, astaksantin, hyaluronik asit, biotin (5.000 mcg), C, D3, K2 vitaminleri, silis ve selenyum ile cilt esnekliği ve saç sağlığı için özel olarak formüle edilmiştir. 500 ml'lik şişe, 25 ml'lik tam 1 ölçek üzerinden 20 günlük kullanım sunar (ölçek kabı kapak üzerindedir). Kullanmadan önce çalkalayınız."
     },
     rating: 4.8, reviews: 0
   },
@@ -74,11 +74,11 @@ const PRODUCTS_ARCHIVE = [
     ],
     inStock: true, stock: 16,
     description: {
-      fr: "Formule liquide 6-en-1 premium contenant 10 000 mcg de biotine et 2 500 mg de collagène marin hydrolysé, enrichie en acide hyaluronique, coenzyme Q10 et vitamines pour sublimer les cheveux, la peau et les ongles. Saveur fruits tropicaux.",
-      en: "Premium 6-in-1 liquid formula containing 10,000 mcg biotin and 2,500 mg hydrolysed marine collagen, enriched with hyaluronic acid, coenzyme Q10, and vitamins for hair, skin, and nails. Tropical fruit flavour.",
-      de: "Premium 6-in-1 flüssige Formel mit 10.000 mcg Biotin und 2.500 mg hydrolysiertem marinem Kollagen, angereichert mit Hyaluronsäure, CoQ10 und Vitaminen für Haare, Haut und Nägel. Tropischer Fruchtgeschmack.",
-      it: "Formula liquida premium 6-in-1 contenente 10.000 mcg di biotina e 2.500 mg di collagene marino idrolizzato, arricchita con acido ialuronico, CoQ10 e vitamine per capelli, pelle e unghie. Gusto frutti tropicali.",
-      tr: "Saç, cilt ve tırnak desteği için premium 6'sı 1 arada sıvı takviyedir. 10.000 mcg biotin ve 2.500 mg hidrolize deniz kolajeninin yanı sıra hyaluronik asit, CoQ10 ve B vitaminleri ile saç köklerini, cilt nemini ve tırnak gücünü destekler."
+      fr: "Formule beauté liquide premium 6-en-1 pour la vitalité des cheveux, de la peau et des ongles. Contient 10 000 mcg de biotine, 2 500 mg de collagène marin hydrolysé, acide hyaluronique, coenzyme Q10, MSM, silice et vitamines du groupe B. Une bouteille de 500 ml offre 20 doses de 25 ml (gobelet doseur inclus sur le bouchon). Saveur fruits tropicaux. Agiter avant utilisation.",
+      en: "Premium 6-in-1 liquid beauty formula for hair, skin, and nail vitality. Contains 10,000 mcg biotin, 2,500 mg hydrolysed marine collagen, hyaluronic acid, CoQ10, MSM, silica, and B-complex vitamins. One 500 ml bottle provides 20 servings of 25 ml (measuring cup included on the cap). Tropical fruit flavour. Shake well before use.",
+      de: "Premium 6-in-1 flüssige Schönheitsformel für Haare, Haut und Nägel. Enthält 10.000 mcg Biotin, 2.500 mg hydrolysiertes marines Kollagen, Hyaluronsäure, CoQ10, MSM, Kieselgel und B-Vitamine. Eine 500-ml-Flasche bietet 20 Portionen à 25 ml (Messbecher auf dem Verschluss enthalten). Tropischer Fruchtgeschmack. Vor Gebrauch gut schütteln.",
+      it: "Formula di bellezza liquida premium 6-in-1 per la vitalità di capelli, pelle e unghie. Contiene 10.000 mcg di biotina, 2.500 mg di collagene marino idrolizzato, acido ialuronico, CoQ10, MSM, silice e vitamine B. Una bottiglia da 500 ml fornisce 20 dosi da 25 ml (misurino incluso sul tappo). Gusto frutti tropicali. Agitare bene prima dell'uso.",
+      tr: "Saç, cilt ve tırnak canlılığı için geliştirilmiş 6'sı 1 arada sıvı premium güzellik formülüdür. 10.000 mcg biotin, 2.500 mg hidrolize deniz kolajeni, hyaluronik asit, CoQ10, MSM, silis ve B grubu vitaminleri içerir. 500 ml'lik şişe, 25 ml'lik tam 1 ölçek üzerinden 20 günlük kullanım sunar (ölçek kabı kapak üzerindedir). Tropikal meyve aromalıdır. Kullanmadan önce çalkalayınız."
     },
     rating: 4.6, reviews: 0
   },
@@ -100,11 +100,11 @@ const PRODUCTS_ARCHIVE = [
     ],
     inStock: true, stock: 16,
     description: {
-      fr: "Notre collagène marin liquide le plus puissant dosé à 15 000 mg par portion. Formule d'élite conçue pour un soutien intensif de la fermeté de la peau, de la brillance des cheveux et de la solidité des articulations. Saveur pomme.",
-      en: "Our most powerful liquid marine collagen with 15,000 mg per serving. Elite formula designed for intensive support of skin firmness, hair shine, and joint strength. Delicious apple flavour.",
-      de: "Unser stärkstes flüssiges marines Kollagen mit 15.000 mg pro Portion. Elite-Formel für die intensive Unterstützung von Hautstraffung, Haarglanz und Gelenkstärke. Apfelgeschmack.",
-      it: "Il nostro collagene marino liquido più potente con 15.000 mg per porzione. Formula d'élite progettata per il supporto intensivo di compattezza della pelle, lucentezza dei capelli e articolazioni. Gusto mela.",
-      tr: "Deniz kolajeni ailesinin en yüksek dozlu 15.000 mg ürünüdür. Cilt, saç ve tırnak desteğinin yanında daha yoğun kolajen rutini ve eklem desteği isteyenler için tasarlanmış amiral gemisi üründür. Yeşil elma aromalıdır."
+      fr: "Notre collagène marin hydrolysé liquide le plus puissant et concentré, dosé à 15 000 mg par dose de 25 ml, sans sucre. Formule d'élite enrichie en acide hyaluronique, biotine (5 000 mcg), vitamines C, B5, B6, B12, D3, silice et sélénium pour un soutien intensif cutané et articulaire. Une bouteille de 500 ml offre 20 doses de 25 ml (gobelet doseur inclus sur le bouchon). Saveur pomme verte. Agiter avant utilisation.",
+      en: "Our most powerful and concentrated liquid hydrolysed marine collagen, with 15,000 mg per 25 ml serving, sugar-free. Elite formula enriched with hyaluronic acid, biotin (5,000 mcg), vitamins C, B5, B6, B12, D3, silica, and selenium for intensive skin and joint support. One 500 ml bottle provides 20 doses of 25 ml (measuring cup included on the cap). Green apple flavour. Shake well before use.",
+      de: "Unser stärkstes und am höchsten konzentriertes flüssiges hydrolysiertes marines Kollagen mit 15.000 mg pro 25 ml Portion, zuckerfrei. Elite-Formel angereichert mit Hyaluronsäure, Biotin (5.000 mcg), Vitaminen C, B5, B6, B12, D3, Kieselgel und Selen für intensive Haut- und Gelenkunterstützung. Eine 500-ml-Flasche bietet 20 Portionen à 25 ml (Messbecher auf dem Verschluss enthalten). Grüner Apfelgeschmack. Vor Gebrauch gut schütteln.",
+      it: "Il nostro collagene marino idrolizzato liquido più potente e concentrato, con 15.000 mg per dose da 25 ml, senza zucchero. Formula d'élite arricchita con acido ialuronico, biotina (5.000 mcg), vitamine C, B5, B6, B12, D3, silice e selenio per un supporto intensivo di pelle e articolazioni. Una bottiglia da 500 ml fornisce 20 dosi da 25 ml (misurino incluso sul tappo). Gusto mela verde. Agitare bene prima dell'uso.",
+      tr: "En yüksek konsantrasyona sahip amiral gemisi sıvı hidrolize deniz kolajenimizdir. 25 ml'lik tek bir dozda 15.000 mg deniz kolajeni içerir, şekersizdir. Yoğun cilt, saç ve eklem desteği için hyaluronik asit, biotin (5.000 mcg), C, B5, B6, B12, D3 vitaminleri, silis ve selenyum ile güçlendirilmiştir. 500 ml'lik şişe, 25 ml'lik tam 1 ölçek üzerinden 20 günlük kullanım sunar (ölçek kabı kapak üzerindedir). Yeşil elma aromalıdır. Kullanmadan önce çalkalayınız."
     },
     rating: 4.9, reviews: 0
   },
@@ -126,11 +126,11 @@ const PRODUCTS_ARCHIVE = [
     ],
     inStock: true, stock: 16,
     description: {
-      fr: "Formule multivitaminée liquide ultra-concentrée avec 126 ingrédients actifs, incluant du ginseng, des acides aminés et des superaliments. Soutient l'énergie, l'immunité, la concentration et la santé globale. Saveur orange.",
-      en: "Ultra-concentrated liquid multivitamin formula with 126 active ingredients, including ginseng, amino acids, and organic superfoods. Supports energy, immunity, mental focus, and cardiovascular health. Orange flavour.",
-      de: "Hochkonzentrierte flüssige Multivitaminformel mit 126 Wirkstoffen, einschließlich Ginseng, Aminosäuren und Superfoods. Unterstützt Energie, Immunität, Fokus und allgemeine Gesundheit. Orangengeschmack.",
-      it: "Formula multivitaminica liquida ultra-concentrata con 126 ingredienti attivi, tra cui ginseng, aminoacidi e superalimenti. Sostiene energia, difese immunitarie, concentrazione e salute cardiovascolare. Gusto arancia.",
-      tr: "Ultra zengin içerikli sıvı multivitamin formülüdür. 126 aktif içerik, ginseng, amino asitler ve organik süper gıda karışımları içerir. Enerji, bağışıklık, kas-eklem ve kalp sağlığı alanlarını desteklemek üzere tasarlanmıştır. Portakal aromalıdır."
+      fr: "Formule multivitaminée liquide ultra-concentrée haute performance. Contient 126 ingrédients actifs : vitamines essentielles, minéraux, acides aminés, ginseng et un mélange breveté de superaliments bio pour booster l'énergie, l'immunité et la vitalité globale. Une bouteille de 500 ml offre 33 doses de 15 ml (gobelet doseur inclus sur le bouchon). Saveur orange. Agiter avant utilisation.",
+      en: "High-performance, ultra-concentrated liquid multivitamin formula. Features 126 active ingredients including essential vitamins, minerals, amino acids, ginseng, and an organic superfood blend to support energy, immunity, and overall vitality. One 500 ml bottle provides 33 daily doses of 15 ml (measuring cup included on the cap). Orange flavour. Shake well before use.",
+      de: "Ultra-konzentrierte, leistungsstarke flüssige Multivitaminformel. Enthält 126 Wirkstoffe: essentielle Vitamine, Mineralien, Aminosäuren, Ginseng und eine Bio-Superfood-Mischung zur Unterstützung von Energie, Immunität und allgemeiner Vitalität. Eine 500-ml-Flasche enthält 33 Dosen à 15 ml (Messbecher auf dem Verschluss enthalten). Orangengeschmack. Vor Gebrauch gut schütteln.",
+      it: "Formula multivitaminica liquida ultra-concentrata ad alte prestazioni. Contiene 126 ingredienti attivi: vitamine essenziali, minerali, aminoacidi, ginseng e una miscela biologica di superfood per supportare energia, sistema immunitario e vitalità generale. Una bottiglia da 500 ml fornisce 33 dosi da 15 ml (misurino incluso sul tappo). Gusto arancia. Agitare bene prima dell'uso.",
+      tr: "Günlük yaşam kalitenizi artırmak için tasarlanmış yüksek performanslı sıvı multivitamin formülüdür. Vücut direnci, enerji ve genel sağlık desteği için 126 aktif bileşen (temel vitaminler, mineraller, amino asitler, ginseng ve organik süper gıda karışımı) içerir. 500 ml'lik şişe, 15 ml'lik tam 1 ölçek üzerinden 33 günlük kullanım sunar (ölçek kabı kapak üzerindedir). Portakal aromalıdır. Kullanmadan önce çalkalayınız."
     },
     rating: 4.6, reviews: 0
   },
@@ -152,11 +152,11 @@ const PRODUCTS_ARCHIVE = [
     ],
     inStock: true, stock: 16,
     description: {
-      fr: "Bisglycinate de magnésium liquide hautement assimilable (400 mg par dose), enrichi en L-théanine, L-tryptophane, vitamines C et D3. Favorise la relaxation musculaire, réduit la fatigue et améliore la qualité du sommeil. Formule vegan saveur orange.",
-      en: "Highly absorbable liquid magnesium bisglycinate (400 mg per serving), enriched with L-theanine, L-tryptophan, vitamin C, and D3. Helps reduce fatigue, supports muscle function, relaxation, and sleep. Vegan, orange flavour.",
-      de: "Gut absorbierbares flüssiges Magnesiumbisglycinat (400 mg pro Portion), angereichert mit L-Theanin, L-Tryptophan, Vitamin C und D3. Unterstützt Muskeln, Nervensystem, Entspannung und Schlafqualität. Vegan, Orangengeschmack.",
-      it: "Bisglicinato di magnesio liquido ad alta assimilabilità (400 mg per porzione), arricchito con L-teanina, L-tryptophan, vitamine C e D3. Aiuta a ridurre la stanchezza, sostiene i muscoli, il rilassamento e il sonno. Vegano, gusto arancia.",
-      tr: "Yüksek emilim odaklı sıvı magnezyum bisglisinat takviyesidir. 400 mg elemental magnezyumun yanı sıra L-theanine, L-tyrosine, L-tryptophan, vitamin C ve D3 içerir. Kas fonksiyonları, sinir sistemi, rahatlama ve uyku rutini desteği için idealdir. Vegan formdadır, portakal aromalıdır."
+      fr: "Bisglycinate de magnésium liquide hautement assimilable fournissant 400 mg de magnésium élémentaire par dose de 15 ml. Enrichi en vitamine C, D3, L-théanine, L-tryptophane et L-tyrosine pour favoriser la relaxation musculaire, réduire la fatigue et améliorer le sommeil. Formule 100% vegan. Une bouteille de 500 ml offre 33 doses de 15 ml (gobelet doseur inclus sur le bouchon). Saveur orange. Agiter avant utilisation.",
+      en: "Highly bioavailable liquid magnesium bisglycinate providing 400 mg elemental magnesium per 15 ml dose. Enriched with vitamin C, D3, L-theanine, L-tryptophan, and L-tyrosine to support muscle relaxation, reduce fatigue, and promote deep sleep. 100% vegan formula. One 500 ml bottle provides 33 daily servings of 15 ml (measuring cup included on the cap). Orange flavour. Shake well before use.",
+      de: "Hoch bioverfügbares flüssiges Magnesiumbisglycinat mit 400 mg elementarem Magnesium pro 15 ml Dosis. Angereichert mit Vitamin C, D3, L-Theanin, L-Tryptophan und L-Tyrosin zur Förderung der Muskelentspannung, Verringerung von Müdigkeit und Verbesserung des Schlafs. 100% vegane Formel. Eine 500-ml-Flasche bietet 33 Portionen à 15 ml (Messbecher auf dem Verschluss enthalten). Orangengeschmack. Vor Gebrauch gut schütteln.",
+      it: "Bisglicinato di magnesio liquido ad alta biodisponibilità che fornisce 400 mg di magnesio elementare per dose da 15 ml. Arricchito con vitamina C, D3, L-teanina, L-triptofano e L-tirosina per favorire il rilassamento muscolare, ridurre l'affaticamento e migliorare il sonno. Formula 100% vegana. Una bottiglia da 500 ml fornisce 33 dosi da 15 ml (misurino incluso sul tappo). Gusto arancia. Agitare bene prima dell'uso.",
+      tr: "Yüksek emilim odaklı sıvı magnezyum bisglisinat takviyesidir. 15 ml'lik tek bir ölçekte 400 mg elemental magnezyum ile birlikte rahatlama, kas gevşemesi ve derin uyku kalitesini destekleyen L-theanine, L-tryptophan, L-tyrosine, vitamin C ve D3 içerir. %100 vegan formdadır. 500 ml'lik şişe, 15 ml'lik tam 1 ölçek üzerinden 33 günlük kullanım sunar (ölçek kabı kapak üzerindedir). Portakal aromalıdır. Kullanmadan önce çalkalayınız."
     },
     rating: 4.7, reviews: 0
   }

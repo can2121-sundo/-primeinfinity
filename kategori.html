@@ -161,22 +161,36 @@ src="https://www.facebook.com/tr?id=969904029147074&ev=PageView&noscript=1"
         </div>
       `;
 
+      const searchResultsLabel = {
+        fr: 'Résultats de recherche',
+        en: 'Search Results',
+        de: 'Suchergebnisse',
+        it: 'Risultati della ricerca',
+        tr: 'Arama Sonuçları'
+      };
+
       // Override the global renderProductCards to keep search, categories, and translation working seamlessly on load and change
       window.renderProductCards = function (activeLang) {
         const lang = activeLang || currentLang || 'fr';
         const t = (typeof translations !== 'undefined' && translations[lang]) ? translations[lang] : translations['fr'];
         
+        const searchInput = document.getElementById('shop-search');
+        const q = searchInput ? normalize(searchInput.value.trim()) : '';
+        
         // Update header & placeholder
-        const catName = cat === 'all' ? (catAllLabel[lang] || catAllLabel.fr) : ((catLabel[lang] || catLabel.fr)[cat] || cat);
+        const catName = q 
+          ? (searchResultsLabel[lang] || searchResultsLabel.fr)
+          : (cat === 'all' ? (catAllLabel[lang] || catAllLabel.fr) : ((catLabel[lang] || catLabel.fr)[cat] || cat));
         const h1 = header.querySelector('h1');
         if (h1) h1.textContent = catName;
         
-        const searchInput = document.getElementById('shop-search');
         if (searchInput) searchInput.placeholder = searchPh[lang] || searchPh.fr;
         
-        // Filter products based on search
-        const q = searchInput ? normalize(searchInput.value.trim()) : '';
-        const filtered = q ? allProducts.filter(p => normalize(getProductName(p, lang)).includes(q)) : allProducts;
+        // Filter products based on search (globally if search query is present)
+        const baseProducts = q ? PRODUCTS : allProducts;
+        const filtered = q 
+          ? baseProducts.filter(p => Object.values(p.name).some(nameStr => normalize(nameStr).includes(q))) 
+          : allProducts;
         
         // Update count label
         const countEl = document.getElementById('prod-count');
