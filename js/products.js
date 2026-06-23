@@ -1,298 +1,168 @@
 /* ============================================
    PrimeInfinity — Product Data & Catalog
-   Top 20 — Swedish Nutra RSL EU (Mart 2026)
-   Fiyatlar: tedarikçi RRP · Stok: 1 koli başlangıç
+   Sipariş Verilen Ürünler (Swedish Nutra)
    ============================================ */
 
 const PRODUCTS_ARCHIVE = [
   {
-    id: 1, sku: 1210,
-    name: { fr: "Collagène Marin Liquide 10 000 mg", de: "Flüssiges Marines Kollagen 10 000 mg", en: "Liquid Marine Collagen 10 000 mg", tr: "Sıvı Deniz Kolajeni 10 000 mg" },
+    id: 2428, sku: 2428,
+    name: {
+      fr: "Swedish Nutra - Collagène 10 000 (Marin) Sans Sucre 2.2 - 500 ml",
+      en: "Swedish Nutra - Collagen 10 000 (Marine) Sugar Free 2.2 - 500 ml",
+      de: "Swedish Nutra - Kollagen 10 000 (Marin) Zuckerfrei 2.2 - 500 ml",
+      it: "Swedish Nutra - Collagene 10 000 (Marino) Senza Zucchero 2.2 - 500 ml",
+      tr: "Swedish Nutra - Kollajen 10 000 (Deniz) Şekersiz 2.2 - 500 ml"
+    },
     price: 35.95, category: "collagen",
-    images: ["images/products/1210.png"],
+    images: [
+      "images/products/2428_01.png",
+      "images/products/2428_02.png",
+      "images/products/2428_03.png",
+      "images/products/2428_04.png"
+    ],
     inStock: true, stock: 16,
     description: {
-      fr: "Collagène marin hydrolysé 10 000 mg en format liquide 500 ml, sans sucre, enrichi en acide hyaluronique et sélénium. Goût fruits rouges, dose journalière pratique.",
-      de: "Hydrolysiertes marines Kollagen 10 000 mg als 500-ml-Liquid, zuckerfrei, mit Hyaluronsäure und Selen. Beerengeschmack, praktische Tagesdosis.",
-      en: "Hydrolysed marine collagen 10 000 mg in a 500 ml liquid format, sugar free, with hyaluronic acid and selenium. Berry flavour, convenient daily dose.",
-      tr: "500 ml sıvı formda 10 000 mg hidrolize deniz kolajeni; şekersiz, hyaluronik asit ve selenyum ilaveli. Orman meyveli, pratik günlük doz."
+      fr: "Supplément de collagène marin liquide de type I & III pour soutenir la peau, les cheveux, les ongles et les articulations. Formulation à haute absorption et faible poids moléculaire, idéale pour votre routine de beauté quotidienne.",
+      en: "Liquid marine collagen supplement Type I & III to support skin, hair, nails, and joints. High absorption and low molecular weight formula, ideal for your daily beauty and care routine.",
+      de: "Flüssiges marines Kollagen-Nahrungsergänzungsmittel Typ I & III zur Unterstützung von Haut, Haaren, Nägeln und Gelenken. Hohe Absorption und niedriges Molekulargewicht, ideal für Ihre tägliche Routine.",
+      it: "Integratore di collagene marino liquido Tipo I & III per sostenere pelle, capelli, unghie e articolazioni. Formula ad alto assorbimento e basso peso molecolare, ideale per la tua routine quotidiana.",
+      tr: "Sıvı formda deniz kolajeni takviyesidir. Tip I & III kolajen desteğiyle cilt, saç, tırnak ve eklem yapısını desteklemeye yöneliktir. Düşük molekül ağırlığı ve yüksek emilimli formülüyle günlük bakım rutini için idealdir."
     },
     rating: 4.8, reviews: 0
   },
   {
-    id: 2, sku: 2697,
-    name: { fr: "Collagène Marin 12 500 mg", de: "Marines Kollagen 12 500 mg", en: "Marine Collagen 12 500 mg", tr: "Deniz Kolajeni 12 500 mg" },
+    id: 2697, sku: 2697,
+    name: {
+      fr: "Swedish Nutra - Collagène Marin 12 500 mg Sans Sucre - 500 ml",
+      en: "Swedish Nutra - Marine Collagen 12 500 mg Sugar Free - 500 ml",
+      de: "Swedish Nutra - Marines Kollagen 12 500 mg Zuckerfrei - 500 ml",
+      it: "Swedish Nutra - Collagene Marino 12 500 mg Senza Zucchero - 500 ml",
+      tr: "Swedish Nutra - Deniz Kolajeni 12 500 mg Şekersiz - 500 ml"
+    },
     price: 40.50, category: "collagen",
-    images: ["images/products/2697.png"],
+    images: [
+      "images/products/2697_01.png",
+      "images/products/2697_02.png",
+      "images/products/2697_03.png",
+      "images/products/2697_04.png"
+    ],
     inStock: true, stock: 16,
     description: {
-      fr: "Formule haute dose : 12 500 mg de collagène marin hydrolysé par dose, sans sucre, en bouteille de 500 ml.",
-      de: "Hochdosierte Formel: 12 500 mg hydrolysiertes marines Kollagen pro Portion, zuckerfrei, 500-ml-Flasche.",
-      en: "High-dose formula: 12 500 mg hydrolysed marine collagen per serving, sugar free, 500 ml bottle.",
-      tr: "Yüksek dozlu formül: porsiyon başına 12 500 mg hidrolize deniz kolajeni, şekersiz, 500 ml şişe."
+      fr: "Formule premium de collagène marin hautement dosée à 12 500 mg, enrichie en élastine, astaxanthine, vitamine K2 et D3 pour le bien-être général, l'élasticité de la peau et le soutien des cheveux.",
+      en: "Premium marine collagen formula with a high dose of 12,500 mg, enriched with elastin, astaxanthin, vitamin K2, and D3 for general wellness, skin elasticity, and hair support.",
+      de: "Premium-Formel mit 12.500 mg marinem Kollagen, angereichert mit Elastin, Astaxanthin, Vitamin K2 und D3 für Hautelastizität, Haare und allgemeines Wohlbefinden.",
+      it: "Formula premium di collagene marino ad alto dosaggio di 12.500 mg, arricchita con elastina, astaxantina, vitamina K2 e D3 per l'elasticità della pelle, i capelli e il benessere generale.",
+      tr: "Premium deniz kolajeni ailesinden 12.500 mg hidrolize deniz kolajeni takviyesidir. Elastin, astaksantin, vitamin K2 ve D3 gibi destekleyici aktiflerle zenginleştirilmiş formülüyle cilt esnekliğini ve saçları destekler."
     },
     rating: 4.8, reviews: 0
   },
   {
-    id: 3, sku: 2594,
-    name: { fr: "Collagène Marin 15 000 mg", de: "Marines Kollagen 15 000 mg", en: "Marine Collagen 15 000 mg", tr: "Deniz Kolajeni 15 000 mg" },
+    id: 2719, sku: 2719,
+    name: {
+      fr: "Swedish Nutra - Hair, Skin and Nails Luxe - 500 ml",
+      en: "Swedish Nutra - Hair, Skin and Nails Luxe - 500 ml",
+      de: "Swedish Nutra - Hair, Skin and Nails Luxe - 500 ml",
+      it: "Swedish Nutra - Hair, Skin and Nails Luxe - 500 ml",
+      tr: "Swedish Nutra - Hair, Skin and Nails Luxe - 500 ml"
+    },
+    price: 24.95, category: "vitamins",
+    images: [
+      "images/products/2719_01.png",
+      "images/products/2719_02.png",
+      "images/products/2719_03.png",
+      "images/products/2719_04.png"
+    ],
+    inStock: true, stock: 16,
+    description: {
+      fr: "Formule liquide 6-en-1 premium contenant 10 000 mcg de biotine et 2 500 mg de collagène marin hydrolysé, enrichie en acide hyaluronique, coenzyme Q10 et vitamines pour sublimer les cheveux, la peau et les ongles. Saveur fruits tropicaux.",
+      en: "Premium 6-in-1 liquid formula containing 10,000 mcg biotin and 2,500 mg hydrolysed marine collagen, enriched with hyaluronic acid, coenzyme Q10, and vitamins for hair, skin, and nails. Tropical fruit flavour.",
+      de: "Premium 6-in-1 flüssige Formel mit 10.000 mcg Biotin und 2.500 mg hydrolysiertem marinem Kollagen, angereichert mit Hyaluronsäure, CoQ10 und Vitaminen für Haare, Haut und Nägel. Tropischer Fruchtgeschmack.",
+      it: "Formula liquida premium 6-in-1 contenente 10.000 mcg di biotina e 2.500 mg di collagene marino idrolizzato, arricchita con acido ialuronico, CoQ10 e vitamine per capelli, pelle e unghie. Gusto frutti tropicali.",
+      tr: "Saç, cilt ve tırnak desteği için premium 6'sı 1 arada sıvı takviyedir. 10.000 mcg biotin ve 2.500 mg hidrolize deniz kolajeninin yanı sıra hyaluronik asit, CoQ10 ve B vitaminleri ile saç köklerini, cilt nemini ve tırnak gücünü destekler."
+    },
+    rating: 4.6, reviews: 0
+  },
+  {
+    id: 2594, sku: 2594,
+    name: {
+      fr: "Swedish Nutra - Collagène Marin 15 000 mg Sans Sucre - 500 ml",
+      en: "Swedish Nutra - Marine Collagen 15 000 mg Sugar Free - 500 ml",
+      de: "Swedish Nutra - Marines Kollagen 15 000 mg Zuckerfrei - 500 ml",
+      it: "Swedish Nutra - Collagene Marino 15 000 mg Senza Zucchero - 500 ml",
+      tr: "Swedish Nutra - Deniz Kolajeni 15 000 mg Şekersiz - 500 ml"
+    },
     price: 49.95, category: "collagen",
-    images: ["images/products/2594.png"],
+    images: [
+      "images/products/2594_01.png",
+      "images/products/2594_02.png",
+      "images/products/2594_03.png",
+      "images/products/2594_04.png"
+    ],
     inStock: true, stock: 16,
     description: {
-      fr: "Notre dose la plus élevée : 15 000 mg de collagène marin par portion. Format liquide 500 ml sans sucre pour une routine beauté premium.",
-      de: "Unsere höchste Dosierung: 15 000 mg marines Kollagen pro Portion. Zuckerfreies 500-ml-Liquid für die Premium-Beautyroutine.",
-      en: "Our highest dose: 15 000 mg marine collagen per serving. Sugar-free 500 ml liquid for a premium beauty routine.",
-      tr: "En yüksek dozumuz: porsiyon başına 15 000 mg deniz kolajeni. Premium güzellik rutini için şekersiz 500 ml sıvı format."
+      fr: "Notre collagène marin liquide le plus puissant dosé à 15 000 mg par portion. Formule d'élite conçue pour un soutien intensif de la fermeté de la peau, de la brillance des cheveux et de la solidité des articulations. Saveur pomme.",
+      en: "Our most powerful liquid marine collagen with 15,000 mg per serving. Elite formula designed for intensive support of skin firmness, hair shine, and joint strength. Delicious apple flavour.",
+      de: "Unser stärkstes flüssiges marines Kollagen mit 15.000 mg pro Portion. Elite-Formel für die intensive Unterstützung von Hautstraffung, Haarglanz und Gelenkstärke. Apfelgeschmack.",
+      it: "Il nostro collagene marino liquido più potente con 15.000 mg per porzione. Formula d'élite progettata per il supporto intensivo di compattezza della pelle, lucentezza dei capelli e articolazioni. Gusto mela.",
+      tr: "Deniz kolajeni ailesinin en yüksek dozlu 15.000 mg ürünüdür. Cilt, saç ve tırnak desteğinin yanında daha yoğun kolajen rutini ve eklem desteği isteyenler için tasarlanmış amiral gemisi üründür. Yeşil elma aromalıdır."
     },
     rating: 4.9, reviews: 0
   },
   {
-    id: 4, sku: 2534,
-    name: { fr: "Collagène Marin Gold Retinol 12 500 mg", de: "Marines Kollagen Gold Retinol 12 500 mg", en: "Marine Collagen Gold Retinol 12 500 mg", tr: "Deniz Kolajeni Gold Retinol 12 500 mg" },
-    price: 40.50, category: "collagen",
-    images: ["images/products/2534.png"],
-    inStock: true, stock: 16,
-    description: {
-      fr: "Collagène marin 12 500 mg associé au rétinol : le duo beauté par excellence en format liquide 500 ml sans sucre.",
-      de: "Marines Kollagen 12 500 mg kombiniert mit Retinol: das Beauty-Duo schlechthin, zuckerfreies 500-ml-Liquid.",
-      en: "Marine collagen 12 500 mg combined with retinol: the ultimate beauty duo in a sugar-free 500 ml liquid.",
-      tr: "Retinol ile birleştirilmiş 12 500 mg deniz kolajeni: şekersiz 500 ml sıvı formda güçlü güzellik ikilisi."
+    id: 2718, sku: 2718,
+    name: {
+      fr: "Swedish Nutra - Multivitamines Max Strength Ultra+ - 500 ml",
+      en: "Swedish Nutra - Max Strength Ultra+ Multivitamin - 500 ml",
+      de: "Swedish Nutra - Max Strength Ultra+ Multivitamin - 500 ml",
+      it: "Swedish Nutra - Multivitaminico Max Strength Ultra+ - 500 ml",
+      tr: "Swedish Nutra - Max Strength Ultra+ Multivitamin - 500 ml"
     },
-    rating: 4.7, reviews: 0
-  },
-  {
-    id: 5, sku: 2634,
-    name: { fr: "Collagène Marin Menoplus", de: "Marines Kollagen Menoplus", en: "Marine Collagen Menoplus", tr: "Deniz Kolajeni Menoplus" },
-    price: 37.80, category: "collagen",
-    images: ["images/products/2634.png"],
-    inStock: true, stock: 16,
-    description: {
-      fr: "Collagène marin formulé pour accompagner les femmes pendant la ménopause. Liquide 500 ml sans sucre.",
-      de: "Marines Kollagen, formuliert zur Begleitung von Frauen in den Wechseljahren. Zuckerfreies 500-ml-Liquid.",
-      en: "Marine collagen formulated to support women through menopause. Sugar-free 500 ml liquid.",
-      tr: "Menopoz dönemindeki kadınlar için formüle edilmiş deniz kolajeni. Şekersiz 500 ml sıvı."
-    },
-    rating: 4.7, reviews: 0
-  },
-  {
-    id: 6, sku: 2482,
-    name: { fr: "Joint Support Max — Articulations", de: "Joint Support Max — Gelenke", en: "Joint Support Max", tr: "Joint Support Max — Eklem Desteği" },
-    price: 31.95, category: "collagen",
-    images: ["images/products/2482.png"],
-    inStock: true, stock: 16,
-    description: {
-      fr: "Formule liquide complète pour le confort articulaire, sans sucre, en bouteille de 500 ml.",
-      de: "Komplette flüssige Formel für den Gelenkkomfort, zuckerfrei, in der 500-ml-Flasche.",
-      en: "Complete liquid formula for joint comfort, sugar free, in a 500 ml bottle.",
-      tr: "Eklem konforu için eksiksiz sıvı formül; şekersiz, 500 ml şişede."
-    },
-    rating: 4.6, reviews: 0
-  },
-  {
-    id: 7, sku: 2633,
-    name: { fr: "Magnésium Bisglycinate Liquide", de: "Magnesiumbisglycinat Flüssig", en: "Liquid Magnesium Bisglycinate", tr: "Sıvı Magnezyum Bisglisinat" },
-    price: 24.95, category: "vitamins",
-    images: ["images/products/2633.png"],
-    inStock: true, stock: 16,
-    description: {
-      fr: "Magnésium sous forme bisglycinate hautement assimilable, en format liquide 500 ml facile à doser.",
-      de: "Magnesium in gut verwertbarer Bisglycinat-Form, als leicht dosierbares 500-ml-Liquid.",
-      en: "Magnesium in highly absorbable bisglycinate form, in an easy-to-dose 500 ml liquid.",
-      tr: "Yüksek emilimli bisglisinat formunda magnezyum; kolay dozlanan 500 ml sıvı format."
-    },
-    rating: 4.7, reviews: 0
-  },
-  {
-    id: 8, sku: 2718,
-    name: { fr: "Multivitamines Max Strength Ultra+", de: "Multivitamin Max Strength Ultra+", en: "Max Strength Ultra+ Multivitamin", tr: "Max Strength Ultra+ Multivitamin" },
     price: 29.95, category: "vitamins",
-    images: ["images/products/2718.png"],
+    images: [
+      "images/products/2718_01.png",
+      "images/products/2718_02.png",
+      "images/products/2718_03.png",
+      "images/products/2718_04.png"
+    ],
     inStock: true, stock: 16,
     description: {
-      fr: "Multivitamines liquides tout-en-un à haute concentration. Une seule dose quotidienne, sans comprimés à avaler.",
-      de: "Hochkonzentriertes All-in-One-Flüssigmultivitamin. Eine Tagesdosis, ohne Tablettenschlucken.",
-      en: "High-strength all-in-one liquid multivitamin. One daily dose, no pills to swallow.",
-      tr: "Yüksek konsantrasyonlu hepsi-bir-arada sıvı multivitamin. Hap yutmadan tek günlük doz."
+      fr: "Formule multivitaminée liquide ultra-concentrée avec 126 ingrédients actifs, incluant du ginseng, des acides aminés et des superaliments. Soutient l'énergie, l'immunité, la concentration et la santé globale. Saveur orange.",
+      en: "Ultra-concentrated liquid multivitamin formula with 126 active ingredients, including ginseng, amino acids, and organic superfoods. Supports energy, immunity, mental focus, and cardiovascular health. Orange flavour.",
+      de: "Hochkonzentrierte flüssige Multivitaminformel mit 126 Wirkstoffen, einschließlich Ginseng, Aminosäuren und Superfoods. Unterstützt Energie, Immunität, Fokus und allgemeine Gesundheit. Orangengeschmack.",
+      it: "Formula multivitaminica liquida ultra-concentrata con 126 ingredienti attivi, tra cui ginseng, aminoacidi e superalimenti. Sostiene energia, difese immunitarie, concentrazione e salute cardiovascolare. Gusto arancia.",
+      tr: "Ultra zengin içerikli sıvı multivitamin formülüdür. 126 aktif içerik, ginseng, amino asitler ve organik süper gıda karışımları içerir. Enerji, bağışıklık, kas-eklem ve kalp sağlığı alanlarını desteklemek üzere tasarlanmıştır. Portakal aromalıdır."
     },
     rating: 4.6, reviews: 0
   },
   {
-    id: 9, sku: 2715,
-    name: { fr: "Multivitamines Homme + Testostérone", de: "Männer-Multivitamin + Testosteron", en: "Man Multivitamin + Testosterone Support", tr: "Erkek Multivitamin + Testosteron Desteği" },
-    price: 29.95, category: "vitamins",
-    images: ["images/products/2715.png"],
-    inStock: true, stock: 16,
-    description: {
-      fr: "Multivitamines liquides conçues pour les hommes, avec des actifs ciblés pour la vitalité masculine. 500 ml.",
-      de: "Flüssiges Multivitamin für Männer mit gezielten Wirkstoffen für die männliche Vitalität. 500 ml.",
-      en: "Liquid multivitamin designed for men, with targeted actives for male vitality. 500 ml.",
-      tr: "Erkekler için tasarlanmış sıvı multivitamin; erkek vitalitesine yönelik hedefli aktifler. 500 ml."
+    id: 2633, sku: 2633,
+    name: {
+      fr: "Swedish Nutra - Bisglycinate de Magnésium - 500 ml",
+      en: "Swedish Nutra - Magnesium Bisglycinate - 500 ml",
+      de: "Swedish Nutra - Magnesiumbisglycinat - 500 ml",
+      it: "Swedish Nutra - Bisglicinato di Magnesio - 500 ml",
+      tr: "Swedish Nutra - Magnezyum Bisglisinat - 500 ml"
     },
-    rating: 4.6, reviews: 0
-  },
-  {
-    id: 10, sku: 2714,
-    name: { fr: "Multivitamines Femme + Cheveux", de: "Frauen-Multivitamin + Haar", en: "Woman Multivitamin + Hair Support", tr: "Kadın Multivitamin + Saç Desteği" },
-    price: 29.95, category: "vitamins",
-    images: ["images/products/2714.png"],
+    price: 24.95, category: "vitamins",
+    images: [
+      "images/products/2633_01.png",
+      "images/products/2633_02.png",
+      "images/products/2633_03.png",
+      "images/products/2633_04.png"
+    ],
     inStock: true, stock: 16,
     description: {
-      fr: "Multivitamines liquides pour femmes enrichies d'actifs dédiés à la beauté des cheveux. 500 ml.",
-      de: "Flüssiges Multivitamin für Frauen, angereichert mit Wirkstoffen für schönes Haar. 500 ml.",
-      en: "Liquid multivitamin for women enriched with actives dedicated to hair beauty. 500 ml.",
-      tr: "Saç güzelliğine özel aktiflerle zenginleştirilmiş kadınlara özel sıvı multivitamin. 500 ml."
+      fr: "Bisglycinate de magnésium liquide hautement assimilable (400 mg par dose), enrichi en L-théanine, L-tryptophane, vitamines C et D3. Favorise la relaxation musculaire, réduit la fatigue et améliore la qualité du sommeil. Formule vegan saveur orange.",
+      en: "Highly absorbable liquid magnesium bisglycinate (400 mg per serving), enriched with L-theanine, L-tryptophan, vitamin C, and D3. Helps reduce fatigue, supports muscle function, relaxation, and sleep. Vegan, orange flavour.",
+      de: "Gut absorbierbares flüssiges Magnesiumbisglycinat (400 mg pro Portion), angereichert mit L-Theanin, L-Tryptophan, Vitamin C und D3. Unterstützt Muskeln, Nervensystem, Entspannung und Schlafqualität. Vegan, Orangengeschmack.",
+      it: "Bisglicinato di magnesio liquido ad alta assimilabilità (400 mg per porzione), arricchito con L-teanina, L-tryptophan, vitamine C e D3. Aiuta a ridurre la stanchezza, sostiene i muscoli, il rilassamento e il sonno. Vegano, gusto arancia.",
+      tr: "Yüksek emilim odaklı sıvı magnezyum bisglisinat takviyesidir. 400 mg elemental magnezyumun yanı sıra L-theanine, L-tyrosine, L-tryptophan, vitamin C ve D3 içerir. Kas fonksiyonları, sinir sistemi, rahatlama ve uyku rutini desteği için idealdir. Vegan formdadır, portakal aromalıdır."
     },
     rating: 4.7, reviews: 0
-  },
-  {
-    id: 11, sku: 2719,
-    name: { fr: "Hair Skin & Nails Luxe", de: "Hair Skin & Nails Luxe", en: "Hair Skin & Nails Luxe", tr: "Hair Skin & Nails Luxe — Saç Cilt Tırnak" },
-    price: 24.95, category: "vitamins",
-    images: ["images/products/2719.png"],
-    inStock: true, stock: 16,
-    description: {
-      fr: "Le classique beauté en version liquide : formule dédiée aux cheveux, à la peau et aux ongles. 500 ml.",
-      de: "Der Beauty-Klassiker als Liquid: Formel für Haare, Haut und Nägel. 500 ml.",
-      en: "The beauty classic in liquid form: a formula dedicated to hair, skin and nails. 500 ml.",
-      tr: "Güzellik klasiği sıvı formda: saç, cilt ve tırnaklara özel formül. 500 ml."
-    },
-    rating: 4.6, reviews: 0
-  },
-  {
-    id: 12, sku: 2720,
-    name: { fr: "Acide Hyaluronique Luxe", de: "Hyaluronsäure Luxe", en: "Hyaluronic Acid Luxe", tr: "Hyaluronik Asit Luxe" },
-    price: 24.95, category: "vitamins",
-    images: ["images/products/2720.png"],
-    inStock: true, stock: 16,
-    description: {
-      fr: "Acide hyaluronique en format liquide 500 ml — l'hydratation de l'intérieur pour une routine beauté complète.",
-      de: "Hyaluronsäure als 500-ml-Liquid — Feuchtigkeit von innen für die komplette Beautyroutine.",
-      en: "Hyaluronic acid in a 500 ml liquid format — hydration from within for a complete beauty routine.",
-      tr: "500 ml sıvı formda hyaluronik asit — içten dışa nem desteğiyle eksiksiz güzellik rutini."
-    },
-    rating: 4.6, reviews: 0
-  },
-  {
-    id: 13, sku: 2721,
-    name: { fr: "Probiotiques Encapsulés Max", de: "Verkapselte Probiotika Max", en: "Encapsulated Probiotics Max", tr: "Kapsüllenmiş Probiyotik Max" },
-    price: 24.95, category: "vitamins",
-    images: ["images/products/2721.png"],
-    inStock: true, stock: 16,
-    description: {
-      fr: "Probiotiques encapsulés en suspension liquide : une approche moderne du bien-être digestif. 500 ml.",
-      de: "Verkapselte Probiotika in flüssiger Suspension: ein moderner Ansatz für das Verdauungswohl. 500 ml.",
-      en: "Encapsulated probiotics in liquid suspension: a modern approach to digestive wellbeing. 500 ml.",
-      tr: "Sıvı süspansiyonda kapsüllenmiş probiyotikler: sindirim konforuna modern yaklaşım. 500 ml."
-    },
-    rating: 4.5, reviews: 0
-  },
-  {
-    id: 14, sku: 1150,
-    name: { fr: "Collagène Marin en Poudre 300 g", de: "Marines Kollagenpulver 300 g", en: "Marine Collagen Powder 300 g", tr: "Toz Deniz Kolajeni 300 g" },
-    price: 32.95, category: "collagen",
-    images: ["images/products/1150.png"],
-    inStock: true, stock: 18,
-    description: {
-      fr: "Collagène marin en poudre neutre, à mélanger dans café, smoothie ou eau. Pot de 300 g, environ 30 jours.",
-      de: "Neutrales marines Kollagenpulver zum Einrühren in Kaffee, Smoothie oder Wasser. 300-g-Dose, ca. 30 Tage.",
-      en: "Neutral marine collagen powder to mix into coffee, smoothies or water. 300 g jar, approx. 30-day supply.",
-      tr: "Kahveye, smoothie'ye veya suya karıştırılan nötr tatlı toz deniz kolajeni. 300 g kavanoz, yaklaşık 30 günlük."
-    },
-    rating: 4.7, reviews: 0
-  },
-  {
-    id: 15, sku: 2478,
-    name: { fr: "Shots Collagène Marin 10 000 mg (30x25 ml)", de: "Marine Kollagen Shots 10 000 mg (30x25 ml)", en: "Marine Collagen Shots 10 000 mg (30x25 ml)", tr: "Deniz Kolajeni Shot 10 000 mg (30x25 ml)" },
-    price: 63.80, category: "shots",
-    images: ["images/products/2478.png"],
-    inStock: true, stock: 6,
-    description: {
-      fr: "Cure d'un mois : 30 shots de 25 ml dosés à 10 000 mg de collagène marin. Pratique, nomade, prêt à boire.",
-      de: "Monatskur: 30 Shots à 25 ml mit je 10 000 mg marinem Kollagen. Praktisch, unterwegs, trinkfertig.",
-      en: "One-month course: 30 x 25 ml shots with 10 000 mg marine collagen each. Convenient, on-the-go, ready to drink.",
-      tr: "Bir aylık kür: her biri 10 000 mg deniz kolajeni içeren 30 adet 25 ml shot. Pratik, taşınabilir, içime hazır."
-    },
-    rating: 4.8, reviews: 0
-  },
-  {
-    id: 16, sku: 2601,
-    name: { fr: "Shots Collagène Marin 12 500 mg (30x25 ml)", de: "Marine Kollagen Shots 12 500 mg (30x25 ml)", en: "Marine Collagen Shots 12 500 mg (30x25 ml)", tr: "Deniz Kolajeni Shot 12 500 mg (30x25 ml)" },
-    price: 71.82, category: "shots",
-    images: ["images/products/2601.png"],
-    inStock: true, stock: 6,
-    description: {
-      fr: "Cure premium d'un mois : 30 shots dosés à 12 500 mg de collagène marin hydrolysé.",
-      de: "Premium-Monatskur: 30 Shots mit je 12 500 mg hydrolysiertem marinem Kollagen.",
-      en: "Premium one-month course: 30 shots with 12 500 mg hydrolysed marine collagen each.",
-      tr: "Premium aylık kür: her biri 12 500 mg hidrolize deniz kolajeni içeren 30 shot."
-    },
-    rating: 4.8, reviews: 0
-  },
-  {
-    id: 17, sku: 2603,
-    name: { fr: "Shots Collagène Marin 15 000 mg (30x25 ml)", de: "Marine Kollagen Shots 15 000 mg (30x25 ml)", en: "Marine Collagen Shots 15 000 mg (30x25 ml)", tr: "Deniz Kolajeni Shot 15 000 mg (30x25 ml)" },
-    price: 95.80, category: "shots",
-    images: ["images/products/2603.png"],
-    inStock: true, stock: 6,
-    description: {
-      fr: "Notre cure la plus puissante : 30 shots de 15 000 mg de collagène marin avec rétinol et élastine. L'excellence en coffret doré.",
-      de: "Unsere stärkste Kur: 30 Shots mit 15 000 mg marinem Kollagen, Retinol und Elastin. Exzellenz in der Goldbox.",
-      en: "Our most powerful course: 30 shots of 15 000 mg marine collagen with retinol and elastin. Excellence in a golden box.",
-      tr: "En güçlü kürümüz: retinol ve elastin ilaveli 15 000 mg deniz kolajeni içeren 30 shot. Altın kutuda mükemmellik."
-    },
-    rating: 4.9, reviews: 0
-  },
-  {
-    id: 18, sku: 2453,
-    name: { fr: "Collagen Deluxe Shots (30x25 ml)", de: "Collagen Deluxe Shots (30x25 ml)", en: "Collagen Deluxe Shots (30x25 ml)", tr: "Collagen Deluxe Shot (30x25 ml)" },
-    price: 89.99, category: "shots",
-    images: ["images/products/2453.png"],
-    inStock: true, stock: 6,
-    description: {
-      fr: "La cure Deluxe signée Swedish Collagen : 30 shots de collagène marin dans un écrin rose poudré, pensée pour la beauté féminine.",
-      de: "Die Deluxe-Kur von Swedish Collagen: 30 marine Kollagen-Shots in zartrosa Verpackung, für die weibliche Schönheit.",
-      en: "The Deluxe course by Swedish Collagen: 30 marine collagen shots in a soft-pink box, designed for feminine beauty.",
-      tr: "Swedish Collagen imzalı Deluxe kür: pudra pembesi kutuda 30 deniz kolajeni shotu, kadın güzelliği için tasarlandı."
-    },
-    rating: 4.8, reviews: 0
-  },
-  {
-    id: 19, sku: 2606,
-    name: { fr: "Collagen Retinol Shots (30x25 ml)", de: "Collagen Retinol Shots (30x25 ml)", en: "Collagen Retinol Shots (30x25 ml)", tr: "Collagen Retinol Shot (30x25 ml)" },
-    price: 99.99, category: "shots",
-    images: ["images/products/2606.png"],
-    inStock: true, stock: 6,
-    description: {
-      fr: "Cure de luxe d'un mois associant collagène marin et rétinol : le rituel beauté ultime signé Swedish Collagen.",
-      de: "Luxus-Monatskur mit marinem Kollagen und Retinol: das ultimative Beauty-Ritual von Swedish Collagen.",
-      en: "Luxury one-month course combining marine collagen and retinol: the ultimate beauty ritual by Swedish Collagen.",
-      tr: "Deniz kolajeni ile retinolü birleştiren lüks aylık kür: Swedish Collagen imzalı nihai güzellik ritüeli."
-    },
-    rating: 4.9, reviews: 0
-  },
-  {
-    id: 20, sku: 2523,
-    name: { fr: "Crème de Jour au Rétinol 50 ml", de: "Retinol-Tagescreme 50 ml", en: "Retinol Day Cream 50 ml", tr: "Retinol Gündüz Kremi 50 ml" },
-    price: 29.95, category: "cosmetics",
-    images: ["images/products/2523.png"],
-    inStock: true, stock: 20,
-    description: {
-      fr: "Crème de jour au rétinol pour lisser le grain de peau et illuminer le teint. Pot de 50 ml, étiquette multilingue.",
-      de: "Retinol-Tagescreme für ein glatteres Hautbild und einen strahlenden Teint. 50-ml-Tiegel.",
-      en: "Retinol day cream to smooth skin texture and brighten the complexion. 50 ml jar.",
-      tr: "Cilt dokusunu pürüzsüzleştiren ve teni aydınlatan retinollü gündüz kremi. 50 ml kavanoz."
-    },
-    rating: 4.6, reviews: 0
   }
 ];
 
-
-/* Mağaza/Boutique'te 10 farklı ürün gösteriliyor (değişik türler).
-   Tüm 20 ürün için:  const PRODUCTS = PRODUCTS_ARCHIVE;  yap. */
-const PRODUCTS = PRODUCTS_ARCHIVE.filter(function (p) {
-  return [1, 3, 7, 8, 11, 12, 13, 14, 17, 20].indexOf(p.id) !== -1;
-});
+const PRODUCTS = PRODUCTS_ARCHIVE;
 
 function getProduct(id) {
   return PRODUCTS.find(p => p.id === parseInt(id));
