@@ -151,6 +151,20 @@ src="https://www.facebook.com/tr?id=969904029147074&ev=PageView&noscript=1"
       const name = getProductName(product, lang);
       const desc = getProductDesc(product, lang);
 
+      const catTranslations = {
+        fr: { collagen: "Collagène", vitamins: "Vitamines" },
+        en: { collagen: "Collagen", vitamins: "Vitamins" },
+        de: { collagen: "Kollagen", vitamins: "Vitamine" },
+        it: { collagen: "Collagene", vitamins: "Vitamine" },
+        tr: { collagen: "Kolajen", vitamins: "Vitaminler" }
+      };
+      const catLabel = catTranslations[lang]?.[product.category] || product.category;
+      const metaCategoryText = lang === 'fr' ? `Catégorie: ${catLabel}` :
+                               lang === 'en' ? `Category: ${catLabel}` :
+                               lang === 'tr' ? `Kategori: ${catLabel}` :
+                               lang === 'de' ? `Kategorie: ${catLabel}` :
+                               `Categoria: ${catLabel}`;
+
       const unitPrice = product.price;
       container.innerHTML = `
         <div class="product-gallery">
@@ -169,9 +183,9 @@ src="https://www.facebook.com/tr?id=969904029147074&ev=PageView&noscript=1"
             <span class="product-reviews">(${product.reviews})</span>
           </div>
           <p class="product-detail-desc">${desc}</p>
-          ${product.inStock === false
-            ? `<div style="background:rgba(255,0,0,0.15);border:1px solid rgba(255,0,0,0.3);color:#ff4444;padding:10px 14px;border-radius:6px;font-size:0.85rem;font-weight:600;margin-bottom:16px;text-align:center;">${t.out_of_stock_detail || '⚠️ Rupture de stock — Ce produit est temporairement indisponible'}</div>`
-            : `<div style="display:flex;align-items:center;gap:8px;color:#1a8f3c;font-size:0.9rem;font-weight:600;margin-bottom:16px;"><span style="width:9px;height:9px;border-radius:50%;background:#1fbe4f;box-shadow:0 0 0 3px rgba(31,190,79,0.18);display:inline-block;"></span>${t.in_stock || 'En stock'}</div>`}
+          ${product.inStock !== false
+            ? `<div style="display:flex;align-items:center;gap:8px;color:#1a8f3c;font-size:0.9rem;font-weight:600;margin-bottom:16px;"><span style="width:9px;height:9px;border-radius:50%;background:#1fbe4f;box-shadow:0 0 0 3px rgba(31,190,79,0.18);display:inline-block;"></span>${t.in_stock || 'En stock'}</div>`
+            : `<div style="background:rgba(255,0,0,0.15);border:1px solid rgba(255,0,0,0.3);color:#ff4444;padding:10px 14px;border-radius:6px;font-size:0.85rem;font-weight:600;margin-bottom:16px;text-align:center;">${t.out_of_stock_detail || '⚠️ Rupture de stock — Ce produit est temporairement indisponible'}</div>`}
           <div class="product-detail-actions">
             <div class="qty-selector">
               <button onclick="updateQty(-1)">−</button>
@@ -183,7 +197,7 @@ src="https://www.facebook.com/tr?id=969904029147074&ev=PageView&noscript=1"
           <button class="btn-outline btn-sm" style="width:100%;margin-top:8px;padding:12px;" onclick="const qty=parseInt(document.getElementById('qty').value)||1;for(let i=0;i<qty;i++)Cart.addItem({id:${product.id},name:'${name.replace(/'/g, "\\'")}',price:${product.price},image:'${product.images[0]}'});" data-i18n="add_to_cart">${t.add_to_cart || 'Ajouter au Panier'}</button>
           <div class="product-detail-meta">
             <span>SKU: PI-${String(product.id).padStart(4,'0')}</span>
-            <span>${t.meta_category || 'Catégorie: Électronique'}</span>
+            <span>${metaCategoryText}</span>
             <span>${t.meta_free_shipping || 'Livraison gratuite dès €50'}</span>
           </div>
         </div>
